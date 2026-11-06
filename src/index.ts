@@ -47,6 +47,10 @@ async function main(): Promise<void> {
   }
 
   protectStdout();
+  // Son savunma hattı: yakalanmamış söz reddi sunucuyu sessizce düşürmesin, stderr'e yazılsın.
+  process.on("unhandledRejection", (reason) => {
+    process.stderr.write(`ozdisan-mcp: yakalanmamış hata: ${reason instanceof Error ? reason.stack ?? reason.message : String(reason)}\n`);
+  });
   const config = loadConfig();
   const { server } = createServer(config);
   const transport = new StdioServerTransport();

@@ -126,23 +126,45 @@ export function safeLookup(hostname: string, options: LookupOptions, callback: L
  */
 export function externalGet(
   url: URL,
-  opts: { headers: Record<string, string>; timeoutMs: number; signal?: AbortSignal },
+  opts: { headers: Record<string, string>; timeoutMs: number; signal?: AbortSignal; lookup?: typeof safeLookup },
 ): Promise<Response> {
   return new Promise((resolve, reject) => {
     const mod = url.protocol === "https:" ? https : http;
     const req = mod.request(
       url,
-      { method: "GET", headers: opts.headers, lookup: safeLookup as never, signal: opts.signal, timeout: opts.timeoutMs },
+      {
+        method: "GET",
+        headers: opts.headers,
+        lookup: (opts.lookup ?? safeLookup) as never,
+        signal: opts.signal,
+        timeout: opts.timeoutMs,
+      },
       (res) => {
-        const status = res.statusCode ?? 502;
-        const headers = new Headers();
-        for (const [k, v] of Object.entries(res.headers)) {
-          if (Array.isArray(v)) for (const item of v) headers.append(k, item);
-          else if (v !== undefined) headers.set(k, String(v));
+        // Karşı taraf kötü niyetli olabilir: buradaki hiçbir hata süreci çökertmemeli.
+        res.on("error", () => undefined);
+        try {
+          const status = res.statusCode ?? 0;
+          if (!Number.isInteger(status) || status < 200 || status > 599) {
+            res.destroy();
+            reject(new Error(`Sunucu geçersiz bir HTTP durum kodu döndürdü (${status}).`));
+            return;
+          }
+          const headers = new Headers();
+          for (const [k, v] of Object.entries(res.headers)) {
+            try {
+              if (Array.isArray(v)) for (const item of v) headers.append(k, item);
+              else if (v !== undefined) headers.set(k, String(v));
+            } catch {
+              // Geçersiz başlık değerleri atlanır.
+            }
+          }
+          const nullBody = [204, 205].includes(status) || (status >= 300 && status < 400);
+          if (nullBody) res.resume();
+          resolve(new Response(nullBody ? null : (Readable.toWeb(res) as ReadableStream), { status, headers }));
+        } catch (err) {
+          res.destroy();
+          reject(err instanceof Error ? err : new Error(String(err)));
         }
-        const nullBody = [101, 103, 204, 205, 304].includes(status) || (status >= 300 && status < 400);
-        if (nullBody) res.resume();
-        resolve(new Response(nullBody ? null : (Readable.toWeb(res) as ReadableStream), { status, headers }));
       },
     );
     req.on("timeout", () => req.destroy(Object.assign(new Error("Sunucu zamanında yanıt vermedi."), { name: "TimeoutError" })));

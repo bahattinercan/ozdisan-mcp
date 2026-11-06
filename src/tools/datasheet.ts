@@ -1,8 +1,9 @@
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 import { safeDecode, type OzdisanClient } from "../api.js";
+import { existsSync, realpathSync } from "node:fs";
 import { homedir } from "node:os";
-import { relative, resolve, sep } from "node:path";
+import { basename, dirname, join, relative, resolve, sep } from "node:path";
 import { expandPath, type Language } from "../config.js";
 import { isOzdisanHost, UserInputError } from "../http.js";
 import { extractPdfText, parsePageRange, searchPages } from "../pdf.js";
@@ -54,27 +55,52 @@ function targetFromUrl(url: string): DatasheetTarget {
   return { url: parsed.toString(), fileName: name, isExternal: !isOzdisanHost(parsed.toString()) };
 }
 
+/** Var olan en derin üst klasörün gerçek yolunu (sembolik bağlantılar çözülmüş) bulur ve kalan parçaları ekler. */
+export function realpathDeepest(p: string): string {
+  let current = resolve(p);
+  const rest: string[] = [];
+  for (;;) {
+    if (existsSync(current)) return join(realpathSync.native(current), ...rest.reverse());
+    const parent = dirname(current);
+    if (parent === current) return resolve(p);
+    rest.push(basename(current));
+    current = parent;
+  }
+}
+
+/** macOS ve Windows'ta dosya sistemi varsayılan olarak büyük/küçük harf duyarsızdır. */
+const CASE_INSENSITIVE_FS = process.platform === "darwin" || process.platform === "win32";
+const BLOCKED_SEGMENTS = new Set(["library", "appdata", "application data", "system32", "windows"]);
+
 /**
  * Model tarafından verilen indirme klasörünü denetler: ev dizini (veya yapılandırılmış indirme klasörü) altında
  * olmalı ve gizli/sistem klasörlerine (".ssh", ".config", "Library" vb.) yazmaya izin verilmez.
- * Böylece istem enjeksiyonuyla hassas klasörlere dosya yazdırılamaz.
+ * Denetim, sembolik bağlantılar çözüldükten sonraki gerçek yol üzerinde ve harf duyarsız yapılır;
+ * böylece istem enjeksiyonuyla hassas klasörlere dosya yazdırılamaz. Gerçek yol döndürülür.
  */
 export function checkDownloadDirectory(input: string, configured: string): string {
-  let dir: string;
+  let requested: string;
   try {
-    dir = resolve(expandPath(input, "directory"));
+    requested = resolve(expandPath(input, "directory"));
   } catch (err) {
     throw new UserInputError((err as Error).message);
   }
-  const home = resolve(homedir());
-  const base = resolve(configured);
-  const within = (root: string) => dir === root || dir.startsWith(root.endsWith(sep) ? root : root + sep);
-  if (!within(home) && !within(base)) {
+  const dir = realpathDeepest(requested);
+  const home = realpathDeepest(homedir());
+  const base = realpathDeepest(configured);
+  const norm = (p: string) => (CASE_INSENSITIVE_FS ? p.toLowerCase() : p);
+  const within = (root: string) => {
+    const d = norm(dir);
+    const r = norm(root);
+    return d === r || d.startsWith(r.endsWith(sep) ? r : r + sep);
+  };
+  const inBase = within(base);
+  if (!inBase && !within(home)) {
     throw new UserInputError(`İndirme klasörü ev dizininiz (${home}) altında olmalı. Farklı bir yer için OZDISAN_DOWNLOAD_DIR ayarlayın.`);
   }
-  const rel = within(base) ? relative(base, dir) : relative(home, dir);
-  const segments = rel.split(sep).filter(Boolean);
-  if (segments.some((seg) => seg.startsWith(".") || seg === "Library" || seg === "AppData")) {
+  const rel = relative(inBase ? base : home, dir);
+  const segments = rel.split(/[\\/]+/).filter(Boolean);
+  if (segments.some((seg) => seg.startsWith(".") || BLOCKED_SEGMENTS.has(seg.toLowerCase()))) {
     throw new UserInputError("Gizli veya sistem klasörlerine indirme yapılamaz; ör. ~/Downloads ya da proje klasörünüzü kullanın.");
   }
   return dir;

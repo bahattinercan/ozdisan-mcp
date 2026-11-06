@@ -136,7 +136,7 @@ describe("checkDownloadDirectory", () => {
     const { checkDownloadDirectory } = await import("../../src/tools/datasheet.js");
     const configured = join(homedir(), "Downloads", "ozdisan-datasheets");
     expect(checkDownloadDirectory("~/Projeler/kart/datasheets", configured)).toBe(join(homedir(), "Projeler", "kart", "datasheets"));
-    for (const bad of ["~/.ssh", "~/.config/autostart", "~/Library/LaunchAgents", "/etc", "/tmp/x", "goreli/yol"]) {
+    for (const bad of ["~/.ssh", "~/.config/autostart", "~/Library/LaunchAgents", "~/library/LaunchAgents", "~/LIBRARY/x", "~/AppData/Roaming", "/etc", "/tmp/x", "goreli/yol"]) {
       expect(() => checkDownloadDirectory(bad, configured)).toThrow(UserInputError);
     }
   });
@@ -146,6 +146,83 @@ describe("checkDownloadDirectory", () => {
     const { resolve } = await import("node:path");
     expect(checkDownloadDirectory("/srv/ds/alt", "/srv/ds")).toBe(resolve("/srv/ds/alt"));
     expect(() => checkDownloadDirectory("/srv/baska", "/srv/ds")).toThrow(UserInputError);
+  });
+});
+
+// Windows'ta sembolik bağlantı oluşturmak ek izin gerektirir ve /etc yoktur.
+describe.skipIf(process.platform === "win32")("checkDownloadDirectory sembolik bağlantılar", () => {
+  it("gizli ya da izin verilen alan dışındaki klasöre giden sembolik bağlantıyı gerçek yola göre reddeder", async () => {
+    const { mkdirSync, symlinkSync } = await import("node:fs");
+    const { join } = await import("node:path");
+    const { tempDir } = await import("../helpers.js");
+    const { checkDownloadDirectory } = await import("../../src/tools/datasheet.js");
+    const base = tempDir("ozdisan-base-");
+    mkdirSync(join(base, ".gizli"));
+    mkdirSync(join(base, "normal"));
+    symlinkSync(join(base, ".gizli"), join(base, "masum"), "dir");
+    symlinkSync("/etc", join(base, "disari"), "dir");
+    expect(checkDownloadDirectory(join(base, "normal", "yeni"), base)).toContain("normal");
+    expect(() => checkDownloadDirectory(join(base, "masum"), base)).toThrow(UserInputError);
+    expect(() => checkDownloadDirectory(join(base, "masum", "alt"), base)).toThrow(UserInputError);
+    expect(() => checkDownloadDirectory(join(base, "disari"), base)).toThrow(UserInputError);
+  });
+});
+
+describe("externalGet kötü niyetli yanıtlara dayanıklıdır", () => {
+  /** Verilen ham HTTP yanıtını yazan TCP sunucusu. */
+  async function rawServer(payload: string, opts: { destroyAfterMs?: number } = {}) {
+    const net = await import("node:net");
+    const server = net.createServer((socket) => {
+      socket.on("error", () => undefined);
+      socket.once("data", () => {
+        socket.write(payload);
+        if (opts.destroyAfterMs !== undefined) setTimeout(() => socket.destroy(), opts.destroyAfterMs);
+        else socket.end();
+      });
+    });
+    await new Promise<void>((r) => server.listen(0, "127.0.0.1", () => r()));
+    return { server, port: (server.address() as { port: number }).port };
+  }
+
+  async function get(port: number) {
+    const dns = await import("node:dns");
+    const { externalGet } = await import("../../src/netguard.js");
+    // Testte yerel sunucuya bağlanabilmek için adres denetimsiz çözümleyici kullanılır.
+    const lookup = ((h: string, o: object, cb: never) => dns.lookup(h, o, cb)) as never;
+    return externalGet(new URL(`http://localhost:${port}/a.pdf`), { headers: {}, timeoutMs: 3000, lookup });
+  }
+
+  it("geçersiz durum kodunda süreci çökertmeden reddeder", async () => {
+    const { server, port } = await rawServer("HTTP/1.1 999 Garip\r\nContent-Length: 0\r\n\r\n");
+    try {
+      await expect(get(port)).rejects.toThrow(/durum kodu/);
+    } finally {
+      server.close();
+    }
+  });
+
+  it("yönlendirme yanıtından sonra kopan bağlantı süreci çökertmez", async () => {
+    const { server, port } = await rawServer(
+      "HTTP/1.1 302 Found\r\nLocation: https://example.com/x.pdf\r\nContent-Length: 1000\r\n\r\nabc",
+      { destroyAfterMs: 20 },
+    );
+    try {
+      const res = await get(port);
+      expect(res.status).toBe(302);
+      expect(res.headers.get("location")).toBe("https://example.com/x.pdf");
+      await new Promise((r) => setTimeout(r, 100));
+    } finally {
+      server.close();
+    }
+  });
+
+  it("bozuk yanıtta reddeder", async () => {
+    const { server, port } = await rawServer("BU HTTP DEGIL\r\n\r\n");
+    try {
+      await expect(get(port)).rejects.toBeInstanceOf(Error);
+    } finally {
+      server.close();
+    }
   });
 });
 

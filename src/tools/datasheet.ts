@@ -1,6 +1,8 @@
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 import { safeDecode, type OzdisanClient } from "../api.js";
+import { homedir } from "node:os";
+import { relative, resolve, sep } from "node:path";
 import { expandPath, type Language } from "../config.js";
 import { isOzdisanHost, UserInputError } from "../http.js";
 import { extractPdfText, parsePageRange, searchPages } from "../pdf.js";
@@ -52,6 +54,32 @@ function targetFromUrl(url: string): DatasheetTarget {
   return { url: parsed.toString(), fileName: name, isExternal: !isOzdisanHost(parsed.toString()) };
 }
 
+/**
+ * Model tarafından verilen indirme klasörünü denetler: ev dizini (veya yapılandırılmış indirme klasörü) altında
+ * olmalı ve gizli/sistem klasörlerine (".ssh", ".config", "Library" vb.) yazmaya izin verilmez.
+ * Böylece istem enjeksiyonuyla hassas klasörlere dosya yazdırılamaz.
+ */
+export function checkDownloadDirectory(input: string, configured: string): string {
+  let dir: string;
+  try {
+    dir = resolve(expandPath(input, "directory"));
+  } catch (err) {
+    throw new UserInputError((err as Error).message);
+  }
+  const home = resolve(homedir());
+  const base = resolve(configured);
+  const within = (root: string) => dir === root || dir.startsWith(root.endsWith(sep) ? root : root + sep);
+  if (!within(home) && !within(base)) {
+    throw new UserInputError(`İndirme klasörü ev dizininiz (${home}) altında olmalı. Farklı bir yer için OZDISAN_DOWNLOAD_DIR ayarlayın.`);
+  }
+  const rel = within(base) ? relative(base, dir) : relative(home, dir);
+  const segments = rel.split(sep).filter(Boolean);
+  if (segments.some((seg) => seg.startsWith(".") || seg === "Library" || seg === "AppData")) {
+    throw new UserInputError("Gizli veya sistem klasörlerine indirme yapılamaz; ör. ~/Downloads ya da proje klasörünüzü kullanın.");
+  }
+  return dir;
+}
+
 export function registerDatasheetTools(server: McpServer, ctx: ToolContext): void {
   const { client } = ctx;
 
@@ -68,7 +96,10 @@ export function registerDatasheetTools(server: McpServer, ctx: ToolContext): voi
         directory: z
           .string()
           .optional()
-          .describe("Target folder as an absolute path ('~/' is expanded to the home folder). Created if missing."),
+          .describe(
+            "Target folder as an absolute path inside the user's home folder ('~/' is expanded), e.g. '~/Projects/board/datasheets'. " +
+              "Hidden/system folders are not allowed. Created if missing.",
+          ),
         overwrite: z.boolean().optional().describe("Download again even if the file already exists (default false)."),
         language: languageSchema,
       },
@@ -77,14 +108,7 @@ export function registerDatasheetTools(server: McpServer, ctx: ToolContext): voi
     handle(async ({ product, directory, overwrite, language }) => {
       const lang = client.lang(language);
       const target = await resolveDatasheet(client, product, lang);
-      let dir = client.config.downloadDir;
-      if (directory?.trim()) {
-        try {
-          dir = expandPath(directory, "directory");
-        } catch (err) {
-          throw new UserInputError((err as Error).message);
-        }
-      }
+      const dir = directory?.trim() ? checkDownloadDirectory(directory, client.config.downloadDir) : client.config.downloadDir;
       const file = await client.downloadFile(target.url, dir, target.fileName, { overwrite });
       return {
         product: target.product,

@@ -4,7 +4,7 @@ import { basename, extname, join, resolve as resolvePath } from "node:path";
 import { DiskCache, MemoryCache } from "./cache.js";
 import type { Config, Currency, Language } from "./config.js";
 import { CancelledError, currentSignal, HttpClient, isOzdisanHost, OzdisanError, UserInputError } from "./http.js";
-import { assertPublicUrl } from "./netguard.js";
+import { assertPublicUrl, externalGet } from "./netguard.js";
 import { compact, similarity } from "./text.js";
 import type {
   RawCategoryNode,
@@ -534,13 +534,35 @@ export class OzdisanClient {
     const timeoutMs = Math.max(this.config.timeoutMs, 60_000);
     let current = url;
     for (let hop = 0; hop < 6; hop++) {
-      if (!isOzdisanHost(current)) await assertPublicUrl(current);
-      const res = await this.http.fetchRaw(current, {
-        lang: this.config.language,
-        accept: "application/pdf,*/*",
-        timeoutMs,
-        redirect: "manual",
-      });
+      let res: Response;
+      if (isOzdisanHost(current)) {
+        res = await this.http.fetchRaw(current, {
+          lang: this.config.language,
+          accept: "application/pdf,*/*",
+          timeoutMs,
+          redirect: "manual",
+        });
+      } else {
+        // Özdisan dışı adres: ad ve IP denetimi + bağlantı anında (DNS rebinding'e karşı) adres denetimi.
+        const target = await assertPublicUrl(current);
+        const outer = currentSignal();
+        const timeout = AbortSignal.timeout(timeoutMs);
+        try {
+          res = await externalGet(target, {
+            headers: { "User-Agent": this.config.userAgent, Accept: "application/pdf,*/*" },
+            timeoutMs,
+            signal: outer ? AbortSignal.any([timeout, outer]) : timeout,
+          });
+        } catch (err) {
+          if (outer?.aborted) throw new CancelledError();
+          if (err instanceof UserInputError) throw err;
+          throw new OzdisanError(`Datasheet adresine ulaşılamadı: ${err instanceof Error ? err.message : String(err)}`, undefined, current);
+        }
+        if (!res.ok && !(res.status >= 300 && res.status < 400)) {
+          await res.body?.cancel().catch(() => undefined);
+          throw new OzdisanError(`Datasheet adresi HTTP ${res.status} döndürdü.`, res.status, current);
+        }
+      }
       if (res.status >= 300 && res.status < 400) {
         const location = res.headers.get("location");
         await res.body?.cancel().catch(() => undefined);
@@ -616,7 +638,8 @@ export class OzdisanClient {
     opts: { overwrite?: boolean } = {},
   ): Promise<{ path: string; bytes: number; cached: boolean }> {
     const dir = resolvePath(directory);
-    const target = join(dir, sanitizeFileName(fileName));
+    // İndirilen içerik her zaman PDF olarak doğrulanır; uzantı da her zaman .pdf olur.
+    const target = join(dir, sanitizeFileName(fileName).replace(/\.[^.]*$/, "") + ".pdf");
     const running = this.downloadsInFlight.get(target);
     if (running) return running;
     const job = (async () => {

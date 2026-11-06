@@ -240,6 +240,15 @@ describe("indirme ve ikili veri güvenliği", () => {
     expect(readdirSync(dir)).toEqual(["x.pdf"]);
   });
 
+  it("indirilen dosyanın uzantısı her zaman .pdf olur", async () => {
+    vi.stubGlobal("fetch", async () => pdfResponse());
+    const client = new OzdisanClient(testConfig());
+    const dir = tempDir();
+    const res = await client.downloadFile("https://cdn.ozdisan.com/x.sh", dir, "kotu.sh");
+    expect(res.path.endsWith("kotu.pdf")).toBe(true);
+    expect(readdirSync(dir)).toEqual(["kotu.pdf"]);
+  });
+
   it("PDF olmayan içeriği kaydetmez", async () => {
     vi.stubGlobal("fetch", async () => new Response("x".repeat(2048), { status: 200, headers: { "content-type": "application/octet-stream" } }));
     const client = new OzdisanClient(testConfig());

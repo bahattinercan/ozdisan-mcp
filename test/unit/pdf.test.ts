@@ -84,8 +84,12 @@ describe("isPrivateAddress / assertPublicUrl", () => {
     for (const ip of ["::ffff:127.0.0.1", "::ffff:7f00:1", "::ffff:a9fe:a9fe", "64:ff9b::7f00:1", "fd00::1", "fe80::1", "::1", "::"]) {
       expect(isPrivateAddress(ip)).toBe(true);
     }
-    for (const ip of ["2001:4860:4860::8888", "::ffff:8.8.8.8", "1.1.1.1"]) {
+    for (const ip of ["2001:4860:4860::8888", "::ffff:8.8.8.8", "1.1.1.1", "2606:4700::1111", "2002:808:808::1", "64:ff9b::808:808"]) {
       expect(isPrivateAddress(ip)).toBe(false);
+    }
+    // IPv4-uyumlu, 6to4, Teredo, yerel NAT64 ve dokümantasyon aralıkları
+    for (const ip of ["::7f00:1", "::127.0.0.1", "2002:7f00:1::", "2002:a9fe:a9fe::1", "2001:0:4136:e378::1", "64:ff9b:1::1", "2001:db8::1", "100::1"]) {
+      expect(isPrivateAddress(ip)).toBe(true);
     }
   });
 
@@ -94,6 +98,54 @@ describe("isPrivateAddress / assertPublicUrl", () => {
     for (const u of ["http://localhost/a.pdf", "http://[::ffff:7f00:1]/a.pdf", "http://10.0.0.5/x", "file:///etc/passwd", "http://user:pw@example.com/"]) {
       await expect(assertPublicUrl(u)).rejects.toBeInstanceOf(UserInputError);
     }
+  });
+});
+
+describe("bağlantı anında adres denetimi (DNS rebinding)", () => {
+  it("safeLookup yerel adrese çözümlenen adı reddeder", async () => {
+    const { safeLookup } = await import("../../src/netguard.js");
+    const err = await new Promise<NodeJS.ErrnoException | null>((resolve) => safeLookup("localhost", {}, (e) => resolve(e)));
+    expect(err?.code).toBe("EPRIVATEADDR");
+  });
+
+  it("externalGet, adı yerel IP'ye çözümlenen sunucuya bağlanmaz", async () => {
+    const { createServer } = await import("node:http");
+    const { externalGet } = await import("../../src/netguard.js");
+    let hit = false;
+    const server = createServer((_req, res) => {
+      hit = true;
+      res.end("%PDF-1.4 gizli");
+    });
+    await new Promise<void>((r) => server.listen(0, "127.0.0.1", () => r()));
+    const port = (server.address() as { port: number }).port;
+    try {
+      await expect(
+        externalGet(new URL(`http://localhost:${port}/a.pdf`), { headers: {}, timeoutMs: 5000 }),
+      ).rejects.toBeInstanceOf(UserInputError);
+      expect(hit).toBe(false);
+    } finally {
+      server.close();
+    }
+  });
+});
+
+describe("checkDownloadDirectory", () => {
+  it("ev dizini altındaki normal klasörlere izin verir, gizli/sistem klasörlerini reddeder", async () => {
+    const { homedir } = await import("node:os");
+    const { join } = await import("node:path");
+    const { checkDownloadDirectory } = await import("../../src/tools/datasheet.js");
+    const configured = join(homedir(), "Downloads", "ozdisan-datasheets");
+    expect(checkDownloadDirectory("~/Projeler/kart/datasheets", configured)).toBe(join(homedir(), "Projeler", "kart", "datasheets"));
+    for (const bad of ["~/.ssh", "~/.config/autostart", "~/Library/LaunchAgents", "/etc", "/tmp/x", "goreli/yol"]) {
+      expect(() => checkDownloadDirectory(bad, configured)).toThrow(UserInputError);
+    }
+  });
+
+  it("yapılandırılmış indirme klasörü ev dizini dışındaysa onun altına izin verir", async () => {
+    const { checkDownloadDirectory } = await import("../../src/tools/datasheet.js");
+    const { resolve } = await import("node:path");
+    expect(checkDownloadDirectory("/srv/ds/alt", "/srv/ds")).toBe(resolve("/srv/ds/alt"));
+    expect(() => checkDownloadDirectory("/srv/baska", "/srv/ds")).toThrow(UserInputError);
   });
 });
 

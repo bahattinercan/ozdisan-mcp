@@ -1,0 +1,346 @@
+{
+ "data": {
+  "projectItems": [],
+  "isProject": false,
+  "id": "01000000-0a83-0a58-6469-08dda8350371",
+  "productId": "01000000-0a83-0a58-63fb-08dda8350371",
+  "erpRefId": "368374",
+  "sku": "STM32F103C8T6",
+  "referenceCode": "Variant-1824275",
+  "productStatus": "ACTIVE",
+  "variantPricingType": "PRC_QTY",
+  "variantPackageType": "TRAY",
+  "description": "IC-32F103C MCU 32BIT 64KB FLASH 48LQFP",
+  "detailedDescription": "STM",
+  "upcomingStock": 0,
+  "currencyCode": "USD",
+  "isDiscounted": false,
+  "isFixedPrice": false,
+  "discountRate": 0,
+  "customerDiscountApplied": true,
+  "isSpecial": false,
+  "isRohs": true,
+  "requiresInstallation": false,
+  "leadTime": "5-6 Hafta",
+  "fullPathTR": "/p/mikroislemciler-218/stm-stm32f103c8t6-368374",
+  "fullPathEN": "/en/p/microcontrollers-218/stm-stm32f103c8t6-368374",
+  "availability": {
+   "mpq": 1500,
+   "minimumOrderQuantity": 1,
+   "orderQuantityMultiplier": 1,
+   "totalStock": 5570,
+   "isDiscountAllowed": true,
+   "maxDiscountRate": 0,
+   "isShowPrice": true,
+   "isShowStock": true,
+   "requiresDocument": false
+  },
+  "manufacturer": {
+   "id": "01000000-0a83-0a58-5ac9-08dd4770c66f",
+   "name": "STM",
+   "slug": "stm",
+   "isDistributor": false,
+   "medias": []
+  },
+  "categories": [
+   {
+    "id": "00000000-0000-0000-0000-00000000007d",
+    "name": "Mikroişlemciler",
+    "sequenceId": 218,
+    "slug": "mikroislemciler-218",
+    "isMain": true
+   }
+  ],
+  "properties": [
+   {
+    "propertyId": "00000000-0000-0000-0000-0000000025dd",
+    "name": "Montaj Tipi",
+    "value": "SMT"
+   },
+   {
+    "propertyId": "00000000-0000-0000-0000-0000000025df",
+    "name": "Kılıf / Kasa",
+    "value": "LQFP48 (7x7mm)"
+   },
+   {
+    "propertyId": "00000000-0000-0000-0000-000000002f76",
+    "name": "İşlemci Çekirdek Tipi",
+    "value": "ARM Cortex-M3"
+   },
+   {
+    "propertyId": "00000000-0000-0000-0000-0000000026d8",
+    "name": "Bit Sayısı",
+    "value": "32 Bit"
+   },
+   {
+    "propertyId": "00000000-0000-0000-0000-0000000026b4",
+    "name": "Bellek Türü",
+    "value": "FLASH"
+   },
+   {
+    "propertyId": "00000000-0000-0000-0000-0000000026b6",
+    "name": "Program Bellek Boyutu",
+    "value": "64 kB"
+   },
+   {
+    "propertyId": "01000000-0a80-0a58-e785-08de332c3d97",
+    "name": "RAM Boyutu",
+    "value": "20 kB"
+   },
+   {
+    "propertyId": "00000000-0000-0000-0000-0000000026b8",
+    "name": "EEPROM Boyutu",
+    "value": "None"
+   },
+   {
+    "propertyId": "00000000-0000-0000-0000-000000002625",
+    "name": "Besleme Voltajı",
+    "value": "2 to 3.6 V"
+   },
+   {
+    "propertyId": "00000000-0000-0000-0000-0000000026b3",
+    "name": "I/O Sayısı",
+    "value": "37"
+   },
+   {
+    "propertyId": "00000000-0000-0000-0000-0000000025e0",
+    "name": "Frekans",
+    "value": "72 MHz"
+   },
+   {
+    "propertyId": "00000000-0000-0000-0000-000000002668",
+    "name": "Hız",
+    "value": "None"
+   },
+   {
+    "propertyId": "00000000-0000-0000-0000-0000000025e4",
+    "name": "Çalışma Sıcaklığı",
+    "value": "-40 °C ~ +85 °C"
+   },
+   {
+    "propertyId": "00000000-0000-0000-0000-000000002607",
+    "name": "Özellikler",
+    "value": "ARM-Based 32 Bit MCU with 64 KB Flash USB CAN 7 Timers 2 ADCs"
+   }
+  ],
+  "medias": [
+   {
+    "path": "STM32F103x8 STM32F103xB.pdf",
+    "field": "Datasheet",
+    "contentType": "application/pdf"
+   },
+   {
+    "path": "https://cdn.ozdisan.com/public/product/assets/LQFP48.jpg",
+    "field": "Picture",
+    "contentType": "image/jpeg"
+   }
+  ],
+  "tags": []
+ },
+ "breadcrumbData": [
+  {
+   "name": "Elektronik Komponentler",
+   "slug": "elektronik-komponentler-1",
+   "level": 1
+  },
+  {
+   "name": "Entegre Devreler (IC'ler)",
+   "slug": "entegre-devreler-icler-9",
+   "level": 2
+  },
+  {
+   "name": "Embedded Entegreler",
+   "slug": "embedded-entegreler-52",
+   "level": 3
+  },
+  {
+   "name": "Mikroişlemciler",
+   "slug": "mikroislemciler-218",
+   "level": 4
+  }
+ ],
+ "initialPrice": {
+  "response": {
+   "message": "Success",
+   "data": {
+    "variantId": "01000000-0a83-0a58-6469-08dda8350371",
+    "mpq": 1500,
+    "pricingType": "PRC_QTY",
+    "isFixedPrice": false,
+    "packages": [
+     {
+      "packaging": "TRAY",
+      "priceBreaks": [
+       {
+        "breakQuantity": 1,
+        "prices": [
+         {
+          "price": 169.058,
+          "listingPrice": 169.058,
+          "cashListingPrice": 0,
+          "cashPrice": 0,
+          "totalPrice": 169.06,
+          "totalListingPrice": 169.06,
+          "currency": "TRY",
+          "extendedPrice": 202.87,
+          "extendedListingPrice": 202.87
+         },
+         {
+          "price": 3.3728,
+          "listingPrice": 3.3728,
+          "cashListingPrice": 0,
+          "cashPrice": 0,
+          "totalPrice": 3.37,
+          "totalListingPrice": 3.37,
+          "currency": "USD",
+          "extendedPrice": 4.04,
+          "extendedListingPrice": 4.04
+         }
+        ]
+       },
+       {
+        "breakQuantity": 100,
+        "prices": [
+         {
+          "price": 158.151,
+          "listingPrice": 158.151,
+          "cashListingPrice": 0,
+          "cashPrice": 0,
+          "totalPrice": 15815.1,
+          "totalListingPrice": 15815.1,
+          "currency": "TRY",
+          "extendedPrice": 18978.12,
+          "extendedListingPrice": 18978.12
+         },
+         {
+          "price": 3.1552,
+          "listingPrice": 3.1552,
+          "cashListingPrice": 0,
+          "cashPrice": 0,
+          "totalPrice": 315.52,
+          "totalListingPrice": 315.52,
+          "currency": "USD",
+          "extendedPrice": 378.62,
+          "extendedListingPrice": 378.62
+         }
+        ]
+       },
+       {
+        "breakQuantity": 500,
+        "prices": [
+         {
+          "price": 147.244,
+          "listingPrice": 147.244,
+          "cashListingPrice": 0,
+          "cashPrice": 0,
+          "totalPrice": 73622,
+          "totalListingPrice": 73622,
+          "currency": "TRY",
+          "extendedPrice": 88346.4,
+          "extendedListingPrice": 88346.4
+         },
+         {
+          "price": 2.9376,
+          "listingPrice": 2.9376,
+          "cashListingPrice": 0,
+          "cashPrice": 0,
+          "totalPrice": 1468.8,
+          "totalListingPrice": 1468.8,
+          "currency": "USD",
+          "extendedPrice": 1762.56,
+          "extendedListingPrice": 1762.56
+         }
+        ]
+       },
+       {
+        "breakQuantity": 1000,
+        "prices": [
+         {
+          "price": 136.337,
+          "listingPrice": 136.337,
+          "cashListingPrice": 0,
+          "cashPrice": 0,
+          "totalPrice": 136337,
+          "totalListingPrice": 136337,
+          "currency": "TRY",
+          "extendedPrice": 163604.4,
+          "extendedListingPrice": 163604.4
+         },
+         {
+          "price": 2.72,
+          "listingPrice": 2.72,
+          "cashListingPrice": 0,
+          "cashPrice": 0,
+          "totalPrice": 2720,
+          "totalListingPrice": 2720,
+          "currency": "USD",
+          "extendedPrice": 3264,
+          "extendedListingPrice": 3264
+         }
+        ]
+       },
+       {
+        "breakQuantity": 1500,
+        "prices": [
+         {
+          "price": 125.43,
+          "listingPrice": 125.43,
+          "cashListingPrice": 0,
+          "cashPrice": 0,
+          "totalPrice": 188145,
+          "totalListingPrice": 188145,
+          "currency": "TRY",
+          "extendedPrice": 225774,
+          "extendedListingPrice": 225774
+         },
+         {
+          "price": 2.5024,
+          "listingPrice": 2.5024,
+          "cashListingPrice": 0,
+          "cashPrice": 0,
+          "totalPrice": 3753.6,
+          "totalListingPrice": 3753.6,
+          "currency": "USD",
+          "extendedPrice": 4504.32,
+          "extendedListingPrice": 4504.32
+         }
+        ]
+       },
+       {
+        "breakQuantity": 7500,
+        "prices": [
+         {
+          "price": 120.413,
+          "listingPrice": 120.413,
+          "cashListingPrice": 0,
+          "cashPrice": 0,
+          "totalPrice": 903097.5,
+          "totalListingPrice": 903097.5,
+          "currency": "TRY",
+          "extendedPrice": 1083717,
+          "extendedListingPrice": 1083717
+         },
+         {
+          "price": 2.4023,
+          "listingPrice": 2.4023,
+          "cashListingPrice": 0,
+          "cashPrice": 0,
+          "totalPrice": 18017.25,
+          "totalListingPrice": 18017.25,
+          "currency": "USD",
+          "extendedPrice": 21620.7,
+          "extendedListingPrice": 21620.7
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "discountRate": 0
+   },
+   "success": true
+  },
+  "currencyCode": "TRY",
+  "countryCode": "TR"
+ }
+}

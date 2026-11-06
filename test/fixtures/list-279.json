@@ -1,0 +1,4046 @@
+{
+ "variantList": {
+  "pageNumber": 1,
+  "pageSize": 3,
+  "totalCount": 3420,
+  "totalPages": 1140,
+  "data": [
+   {
+    "id": "01000000-0a81-0a58-a0d1-08dda834c32c",
+    "productId": "01000000-0a81-0a58-a074-08dda834c32c",
+    "mainCategoryId": "00000000-0000-0000-0000-0000000000dc",
+    "variantPackageType": "TAPE&REEL",
+    "variantPricingType": "PRC_QTY",
+    "packagingOptions": [
+     "Tape & Reel (TR)",
+     "Cut & Tape (CT)",
+     "Özdisan Reel (OR)"
+    ],
+    "erpRefId": "350187",
+    "sku": "L78L33ABUTR",
+    "fullPath": "lineer-voltaj-regulatorleri-279/stm-l78l33abutr-350187",
+    "sequenceId": 279,
+    "referenceCode": "Variant-1815071",
+    "description": "IC-78L33 VOLTAGE REGULATOR 3.3V 100mA SOT89 ST",
+    "isSpecial": false,
+    "isFeatured": false,
+    "upcomingStock": 0,
+    "isDiscounted": false,
+    "customerDiscountApplied": false,
+    "isFixedPrice": false,
+    "isRohs": true,
+    "requiresInstallation": false,
+    "discountRate": 0,
+    "isProject": false,
+    "quantity": 1,
+    "totalPrice": 5.7,
+    "availability": {
+     "mpq": 2500,
+     "minimumOrderQuantity": 1,
+     "orderQuantityMultiplier": 1,
+     "totalStock": 109157,
+     "isDiscountAllowed": false,
+     "isShowPrice": true,
+     "isShowStock": true,
+     "requiresDocument": false
+    },
+    "manufacturer": {
+     "id": "01000000-0a83-0a58-5ac9-08dd4770c66f",
+     "name": "STM",
+     "slug": "stm"
+    },
+    "properties": [
+     {
+      "id": "00000000-0000-0000-0000-000000002607",
+      "key": "Features",
+      "value": "Positive Voltage Regulators",
+      "convertedValue": 0
+     },
+     {
+      "id": "00000000-0000-0000-0000-0000000025dd",
+      "key": "Mounting Type",
+      "value": "SMT",
+      "convertedValue": 0
+     },
+     {
+      "id": "00000000-0000-0000-0000-0000000025df",
+      "key": "Package / Case",
+      "value": "SOT89-3",
+      "convertedValue": 89
+     },
+     {
+      "id": "00000000-0000-0000-0000-000000002714",
+      "key": "Regulator Type",
+      "value": "Positive Fixed",
+      "convertedValue": 0
+     },
+     {
+      "id": "00000000-0000-0000-0000-000000002fdc",
+      "key": "Input Voltage (Operating)",
+      "value": "5.3 to 20 V",
+      "convertedValue": 5.3
+     },
+     {
+      "id": "00000000-0000-0000-0000-000000002fed",
+      "key": "Input Voltage (Max)",
+      "value": "N/A",
+      "convertedValue": 0
+     },
+     {
+      "id": "00000000-0000-0000-0000-00000000264f",
+      "key": "Output Voltage",
+      "value": "3.3 V",
+      "convertedValue": 3.3
+     },
+     {
+      "id": "00000000-0000-0000-0000-00000000261f",
+      "key": "Output Current",
+      "value": "100 mA",
+      "convertedValue": 0.1
+     },
+     {
+      "id": "00000000-0000-0000-0000-0000000025e4",
+      "key": "Operating Temperature",
+      "value": "-40 °C ~ +125 °C",
+      "convertedValue": -40
+     }
+    ],
+    "tags": [],
+    "medias": {
+     "pdfPath": "L78L.pdf",
+     "imagePath": "https://cdn.ozdisan.com/public/product/assets/SOT89-3.jpg"
+    },
+    "prices": [
+     {
+      "breakQuantity": 1,
+      "price": 5.70038,
+      "listingPrice": 5.70038,
+      "currencyCode": "TRY"
+     },
+     {
+      "breakQuantity": 12500,
+      "price": 4.06014,
+      "listingPrice": 4.06014,
+      "currencyCode": "TRY"
+     }
+    ],
+    "categories": [],
+    "isSimilar": false,
+    "isSubstitute": false,
+    "isConcomitant": false,
+    "isParametric": false
+   },
+   {
+    "id": "01000000-0a81-0a58-5ac1-08dda835cb2e",
+    "productId": "01000000-0a81-0a58-5a63-08dda835cb2e",
+    "mainCategoryId": "00000000-0000-0000-0000-0000000000dc",
+    "variantPackageType": "TAPE&BOX",
+    "variantPricingType": "PRC_QTY",
+    "packagingOptions": [
+     "TAPE&BOX"
+    ],
+    "erpRefId": "478409",
+    "sku": "78L08ACZ-TR-HT",
+    "fullPath": "lineer-voltaj-regulatorleri-279/hottech-78l08acz-tr-ht-478409",
+    "sequenceId": 279,
+    "referenceCode": "Variant-1854457",
+    "description": "IC-78L08 V.REG. 8V TO-92 TB",
+    "isSpecial": false,
+    "isFeatured": false,
+    "upcomingStock": 0,
+    "isDiscounted": false,
+    "customerDiscountApplied": false,
+    "isFixedPrice": false,
+    "isRohs": true,
+    "requiresInstallation": false,
+    "discountRate": 0,
+    "isProject": false,
+    "quantity": 2,
+    "totalPrice": 6.59,
+    "availability": {
+     "mpq": 2000,
+     "minimumOrderQuantity": 2,
+     "orderQuantityMultiplier": 2,
+     "totalStock": 98003,
+     "isDiscountAllowed": false,
+     "isShowPrice": true,
+     "isShowStock": true,
+     "requiresDocument": false
+    },
+    "manufacturer": {
+     "id": "01000000-0a81-0a58-a46a-08dd4771538f",
+     "name": "HOTTECH",
+     "slug": "hottech"
+    },
+    "properties": [
+     {
+      "id": "00000000-0000-0000-0000-000000002607",
+      "key": "Features",
+      "value": "Plastic-Encapsulate Voltage Regulators",
+      "convertedValue": 0
+     },
+     {
+      "id": "00000000-0000-0000-0000-0000000025dd",
+      "key": "Mounting Type",
+      "value": "THT",
+      "convertedValue": 0
+     },
+     {
+      "id": "00000000-0000-0000-0000-0000000025df",
+      "key": "Package / Case",
+      "value": "TO92-3",
+      "convertedValue": 92
+     },
+     {
+      "id": "00000000-0000-0000-0000-000000002714",
+      "key": "Regulator Type",
+      "value": "Positive Fixed",
+      "convertedValue": 0
+     },
+     {
+      "id": "00000000-0000-0000-0000-000000002fdc",
+      "key": "Input Voltage (Operating)",
+      "value": "10 to 23 V",
+      "convertedValue": 10
+     },
+     {
+      "id": "00000000-0000-0000-0000-000000002fed",
+      "key": "Input Voltage (Max)",
+      "value": "N/A",
+      "convertedValue": 0
+     },
+     {
+      "id": "00000000-0000-0000-0000-00000000264f",
+      "key": "Output Voltage",
+      "value": "7.6 to 8.4 V",
+      "convertedValue": 7.6
+     },
+     {
+      "id": "00000000-0000-0000-0000-00000000261f",
+      "key": "Output Current",
+      "value": "100 mA",
+      "convertedValue": 0.1
+     },
+     {
+      "id": "00000000-0000-0000-0000-0000000025e4",
+      "key": "Operating Temperature",
+      "value": "0 °C ~ +125 °C",
+      "convertedValue": 0
+     }
+    ],
+    "tags": [],
+    "medias": {
+     "pdfPath": "78L08_HOTTECH.pdf",
+     "imagePath": "https://cdn.ozdisan.com/public/product/assets/TO92.jpg"
+    },
+    "prices": [
+     {
+      "breakQuantity": 2,
+      "price": 3.29414,
+      "listingPrice": 3.29414,
+      "currencyCode": "TRY"
+     },
+     {
+      "breakQuantity": 10000,
+      "price": 2.34628,
+      "listingPrice": 2.34628,
+      "currencyCode": "TRY"
+     }
+    ],
+    "categories": [],
+    "isSimilar": false,
+    "isSubstitute": false,
+    "isConcomitant": false,
+    "isParametric": false
+   },
+   {
+    "id": "01000000-0a83-0a58-5ca7-08dda83deaf1",
+    "productId": "01000000-0a83-0a58-5c4b-08dda83deaf1",
+    "mainCategoryId": "00000000-0000-0000-0000-0000000000dc",
+    "variantPackageType": "TAPE&REEL",
+    "variantPricingType": "PRC_QTY",
+    "packagingOptions": [
+     "Tape & Reel (TR)",
+     "Cut & Tape (CT)",
+     "Özdisan Reel (OR)"
+    ],
+    "erpRefId": "732249",
+    "sku": "LD2985G-33-AF5-R",
+    "fullPath": "lineer-voltaj-regulatorleri-279/utc-ld2985g-33-af5-r-732249",
+    "sequenceId": 279,
+    "referenceCode": "Variant-2065431",
+    "description": "IC-2985 REG LDO 3.3V 0.15A SOT-25 T/R UTC  ",
+    "isSpecial": false,
+    "isFeatured": false,
+    "upcomingStock": 0,
+    "isDiscounted": false,
+    "customerDiscountApplied": false,
+    "isFixedPrice": false,
+    "isRohs": true,
+    "requiresInstallation": false,
+    "discountRate": 0,
+    "isProject": false,
+    "quantity": 2,
+    "totalPrice": 7.1,
+    "availability": {
+     "mpq": 3000,
+     "minimumOrderQuantity": 2,
+     "orderQuantityMultiplier": 2,
+     "totalStock": 51213,
+     "isDiscountAllowed": false,
+     "isShowPrice": true,
+     "isShowStock": true,
+     "requiresDocument": false
+    },
+    "manufacturer": {
+     "id": "01000000-0a81-0a58-c6a8-08dd4770dcff",
+     "name": "UTC",
+     "slug": "utc"
+    },
+    "properties": [
+     {
+      "id": "00000000-0000-0000-0000-000000002607",
+      "key": "Features",
+      "value": "Very Low Drop and Low Noise Voltage Regulator Low esr cap. Compatible, with Inhibit Function",
+      "convertedValue": 0
+     },
+     {
+      "id": "00000000-0000-0000-0000-0000000025dd",
+      "key": "Mounting Type",
+      "value": "SMT",
+      "convertedValue": 0
+     },
+     {
+      "id": "00000000-0000-0000-0000-0000000025df",
+      "key": "Package / Case",
+      "value": "SOT25-5",
+      "convertedValue": 25
+     },
+     {
+      "id": "00000000-0000-0000-0000-000000002714",
+      "key": "Regulator Type",
+      "value": "Positive Fixed",
+      "convertedValue": 0
+     },
+     {
+      "id": "00000000-0000-0000-0000-000000002fdc",
+      "key": "Input Voltage (Operating)",
+      "value": "N/A",
+      "convertedValue": 0
+     },
+     {
+      "id": "00000000-0000-0000-0000-000000002fed",
+      "key": "Input Voltage (Max)",
+      "value": "16 V",
+      "convertedValue": 16
+     },
+     {
+      "id": "00000000-0000-0000-0000-00000000264f",
+      "key": "Output Voltage",
+      "value": "3.3 V",
+      "convertedValue": 3.3
+     },
+     {
+      "id": "00000000-0000-0000-0000-00000000261f",
+      "key": "Output Current",
+      "value": "150 mA",
+      "convertedValue": 0.15
+     },
+     {
+      "id": "00000000-0000-0000-0000-0000000025e4",
+      "key": "Operating Temperature",
+      "value": "-40 °C ~ +125 °C",
+      "convertedValue": -40
+     }
+    ],
+    "tags": [],
+    "medias": {
+     "pdfPath": "LD2985.pdf",
+     "imagePath": "https://cdn.ozdisan.com/public/product/assets/SOT25.jpg"
+    },
+    "prices": [
+     {
+      "breakQuantity": 2,
+      "price": 3.55022,
+      "listingPrice": 3.55022,
+      "currencyCode": "TRY"
+     },
+     {
+      "breakQuantity": 15000,
+      "price": 2.6315,
+      "listingPrice": 2.6315,
+      "currencyCode": "TRY"
+     }
+    ],
+    "categories": [],
+    "isSimilar": false,
+    "isSubstitute": false,
+    "isConcomitant": false,
+    "isParametric": false
+   }
+  ]
+ },
+ "commonFilters": [
+  {
+   "name": "Belgeler & Medya",
+   "code": "documentOptions",
+   "order": 3,
+   "inputType": "CheckBox",
+   "options": [
+    {
+     "value": "Datasheet",
+     "label": "Datasheet"
+    },
+    {
+     "value": "Picture",
+     "label": "Fotoğraf"
+    },
+    {
+     "value": "VideoPath",
+     "label": "Video"
+    }
+   ]
+  },
+  {
+   "name": "RoHS Seçenekleri",
+   "code": "environmentalOptions",
+   "order": 2,
+   "inputType": "Radio",
+   "options": [
+    {
+     "value": "Rohs",
+     "label": "RoHS Belgeli"
+    },
+    {
+     "value": "NonRohs",
+     "label": "RoHS Belgesiz"
+    }
+   ]
+  },
+  {
+   "name": "Stok Durumları",
+   "code": "stockingOptions",
+   "order": 1,
+   "inputType": "CheckBox",
+   "options": [
+    {
+     "value": "InStock",
+     "label": "Stokta Var"
+    },
+    {
+     "value": "HasUpcomingStock",
+     "label": "Gelecek Stok Var"
+    }
+   ]
+  },
+  {
+   "name": "Labels",
+   "code": "labelOptions",
+   "order": 5,
+   "inputType": "CheckBox",
+   "options": []
+  },
+  {
+   "name": "Ek Seçenekler",
+   "code": "additionalOptions",
+   "order": 4,
+   "inputType": "Radio",
+   "options": [
+    {
+     "value": "DiscountedProduct",
+     "label": "Kampanyalı Ürün"
+    }
+   ]
+  }
+ ],
+ "propertyFilters": [
+  {
+   "propertyId": "Manufacturer",
+   "name": "Üretici Firma",
+   "values": [
+    {
+     "value": "3PEAK",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "ABLIC",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "AMS",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "CHIPLINK",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "DIODES",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "DIODES (ZETEX)",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "EXAR",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "HOLTEK",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "HOTTECH",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "HTC",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "INFINEON",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "INFOREC",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "KEC",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "MAXLINEAR",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "MICREL-MICROCHIP",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "MICROCHIP",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "MPS (MONOLITHIC)",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "NEC",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "NEXPERIA",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "NISSHINBO",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "NJR CORP.",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "NSC",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "NXP",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "OEM",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "ONS",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "ONS (FAIRCHILD)",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "ONS (MOTOROLA)",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "ONSEMI",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "RENESAS",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "RICHTEK",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "ROHM",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "RUNIC TECHNOLOGY",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "SAMSUNG",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "SANKEN",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "SEMTECH",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "SILERGY",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "SIPEX",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "STM",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "SUPERTEX-MICROCHIP",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "TAIWAN SEMIC.",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "TEXAS",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "TOREX",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "TOSHIBA",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "UMW",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "UTC",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "WING SHING",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    }
+   ],
+   "meta": {
+    "categoryId": "00000000-0000-0000-0000-0000000000dc",
+    "propertyId": "Manufacturer",
+    "propertyName": "Üretici Firma",
+    "propertyType": {
+     "id": 2,
+     "isNumeric": false
+    },
+    "meta": {
+     "order": -7.922816251426434e+28,
+     "displayInFilter": true,
+     "displayInResult": true
+    }
+   }
+  },
+  {
+   "propertyId": "00000000-0000-0000-0000-0000000025dd",
+   "name": "Montaj Tipi",
+   "values": [
+    {
+     "value": "SMT",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "THT",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    }
+   ],
+   "meta": {
+    "categoryId": "00000000-0000-0000-0000-0000000000dc",
+    "propertyId": "00000000-0000-0000-0000-0000000025dd",
+    "propertyName": "Montaj Tipi",
+    "propertyType": {
+     "id": 2,
+     "isNumeric": false
+    },
+    "meta": {
+     "order": 10,
+     "displayInFilter": true,
+     "displayInResult": true
+    }
+   }
+  },
+  {
+   "propertyId": "00000000-0000-0000-0000-0000000025df",
+   "name": "Kılıf / Kasa",
+   "values": [
+    {
+     "value": "D2PAK/A-3",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "P2PAK/A-4",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "DFN4",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "DSBGA4",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "FlipChip-4",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "TDFN4",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "TMLF4",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "UDFN4",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "WLCSP4",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "DFN4 (1x1)",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "DPAK5",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "DSBGA5",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "HRP-5",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "PENTAWATT-5",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "SOT5",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "SPAK5",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "SSOP5",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "TSOP5",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "DSBGA6",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "MLF6",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "SNT-6A",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "TDFN6",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "UDFN6",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "VSON6",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "WDFN6",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "WSON6",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "WSON6 (1.5x1.5)",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "DFN6 (2x2)",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "WSON6 (2x2)",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "DFN6 (2x2.2)",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "DFN6 (3x3)",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "WSON6 (3x3)",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "DFN6 (3x3.3)",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "DIP8",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "EMSOP8",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "ESOP8",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "HTSOP-J8",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "HVSSOP8",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "MICRO8",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "MSOP8",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "MSOP8 EP",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "PG-DSO-8 EP",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "QFN8",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "SO8",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "SO8 EP",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "SOIC8",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "SOIC8 EP",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "SON8",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "SOP8",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "SOP8 EP",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "TDFN8",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "TSSOP8",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "VSON8",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "VSSOP8",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "WSON8",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "DFN8 (2x2)",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "DFN8 (3x3)",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "DFN8 (4x4)",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "HVSSOP10",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "SON10",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    }
+   ],
+   "meta": {
+    "categoryId": "00000000-0000-0000-0000-0000000000dc",
+    "propertyId": "00000000-0000-0000-0000-0000000025df",
+    "propertyName": "Kılıf / Kasa",
+    "propertyType": {
+     "id": 2,
+     "isNumeric": false
+    },
+    "meta": {
+     "order": 20,
+     "displayInFilter": true,
+     "displayInResult": true
+    }
+   }
+  },
+  {
+   "propertyId": "00000000-0000-0000-0000-000000002714",
+   "name": "Regülatör Tipi",
+   "values": [
+    {
+     "value": "Adjustable",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "Adjustable/Programmable",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "N/A",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "Negative Adjustable",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "Positive Adjustable",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "Positive Adjustable/Programmable",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "Positive and Negative Adjustable",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "Positive or Negative Adjustable",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "Fixed",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "Negative Fixed",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "Positive Adjustable (Fixed)",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "Positive Fixed",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "Positive Fixed or Adjustable",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    }
+   ],
+   "meta": {
+    "categoryId": "00000000-0000-0000-0000-0000000000dc",
+    "propertyId": "00000000-0000-0000-0000-000000002714",
+    "propertyName": "Regülatör Tipi",
+    "propertyType": {
+     "id": 2,
+     "isNumeric": false
+    },
+    "meta": {
+     "order": 30,
+     "displayInFilter": true,
+     "displayInResult": true
+    }
+   }
+  },
+  {
+   "propertyId": "00000000-0000-0000-0000-000000002fdc",
+   "name": "Giriş Voltajı (Çalışma)",
+   "values": [
+    {
+     "value": "3.3 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "3.8 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "4.8 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "5 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "5.5 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "6 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "6.5 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "7 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "7.5 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "10 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "11 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "12 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "13 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "14 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "15 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "16 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "17 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "20 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "24 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "26 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "30 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "35 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "40 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "125 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "-35 to -3 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-27 to -38 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-26 to -6 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-20.5 to -33 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-18.5 to -30 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-17.5 to -30 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-15.5 to -27 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-15 to -27 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-15 to 45 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-14.5 to -30 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-14.5 to -27 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-14.5 to -20 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-14 to -27 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-11.5 to -23 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-10.5 to -23 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-8 to -20 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-7 to -25 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-7 to -20 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-3 to -35 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-2.7 to -10 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-2.5 to -37 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-0.3 to -26 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "0 to 6 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "0.3 to 5.5 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "0.75 to 3.3 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "0.8 to 5.5 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "0.8 to 8 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1 to 3.5 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1 to 5.5 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1 to 6 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1 to 16 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1 to 26 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1.1 to 3.6 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1.1 to 4.5 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1.1 to 5.5 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1.1 to 6.5 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    }
+   ],
+   "meta": {
+    "categoryId": "00000000-0000-0000-0000-0000000000dc",
+    "propertyId": "00000000-0000-0000-0000-000000002fdc",
+    "propertyName": "Giriş Voltajı (Çalışma)",
+    "propertyType": {
+     "id": 1,
+     "isNumeric": true
+    },
+    "measurement": {
+     "id": "01000000-d683-02a3-cecd-08dc6a9b4ee8",
+     "units": [
+      {
+       "isBase": true,
+       "isFormula": true,
+       "unit": {
+        "id": "01000000-d683-02a3-1883-08dc6a98f869",
+        "name": "Voltage",
+        "symbol": "V"
+       },
+       "order": 3
+      }
+     ]
+    },
+    "meta": {
+     "order": 40,
+     "displayInFilter": true,
+     "displayInResult": true
+    }
+   }
+  },
+  {
+   "propertyId": "00000000-0000-0000-0000-000000002fed",
+   "name": "Giriş Voltajı (Maks)",
+   "values": [
+    {
+     "value": "-40 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "-38 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "-35 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "-33 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "-30 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "-27 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "-25 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "-23 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "-20 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "3.3 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "3.6 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "4.5 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "5 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "5.25 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "5.5 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "5.7 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "6 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "6.5 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "7 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "8 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "9 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "10 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "12 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "13 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "13.2 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "13.5 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "14 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "15 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "16 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "17 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "18 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "20 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "21 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "23 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "24 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "25 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "26 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "26.5 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "27 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "28 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "29 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "30 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "32 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "33 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "±33 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "35 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "36 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "37 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "38 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "39 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "40 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "42 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "45 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "50 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "60 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "100 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "120 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "N/A",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    }
+   ],
+   "meta": {
+    "categoryId": "00000000-0000-0000-0000-0000000000dc",
+    "propertyId": "00000000-0000-0000-0000-000000002fed",
+    "propertyName": "Giriş Voltajı (Maks)",
+    "propertyType": {
+     "id": 1,
+     "isNumeric": true
+    },
+    "measurement": {
+     "id": "01000000-d683-02a3-cecd-08dc6a9b4ee8",
+     "units": [
+      {
+       "isBase": true,
+       "isFormula": true,
+       "unit": {
+        "id": "01000000-d683-02a3-1883-08dc6a98f869",
+        "name": "Voltage",
+        "symbol": "V"
+       },
+       "order": 3
+      }
+     ]
+    },
+    "meta": {
+     "order": 50,
+     "displayInFilter": true,
+     "displayInResult": true
+    }
+   }
+  },
+  {
+   "propertyId": "00000000-0000-0000-0000-00000000264f",
+   "name": "Çıkış Voltajı",
+   "values": [
+    {
+     "value": "900 mV",
+     "unitOrder": "2",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-7f9b-08dc6a9905f1"
+    },
+    {
+     "value": "-24 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "-18 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "-15 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "-12 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "-9 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "-8 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "-6 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "-5 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "-2.5 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "0.8 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "0.9 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "1 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "1.1 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "1.2 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "1.22 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "1.24 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "1.5 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "1.8 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "1.875 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "2 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "2.5 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "2.8 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "2.85 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "2.9 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "3 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "3.1 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "3.2 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "3.3 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "3.45 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "3.6 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "3.8 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "4 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "4.5 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "4.7 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "5 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "5.5 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "6 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "6.2 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "8 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "9 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "10 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "12 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "13.7 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "15 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "18 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "20 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "24 V",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-1883-08dc6a98f869"
+    },
+    {
+     "value": "-37 to -1.2 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-7.6 to -8.4 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-3 to -24 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-3 to 45 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-1.2 to -37 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-1.2 to -10 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-1.2 to 37 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-1.18 to -33 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "0 to 5.5 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "0.5 to 3.8 V, 0.5 V, 1.2 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "0.5 to 4.5 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "0.5 to 5 V",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    }
+   ],
+   "meta": {
+    "categoryId": "00000000-0000-0000-0000-0000000000dc",
+    "propertyId": "00000000-0000-0000-0000-00000000264f",
+    "propertyName": "Çıkış Voltajı",
+    "propertyType": {
+     "id": 1,
+     "isNumeric": true
+    },
+    "measurement": {
+     "id": "01000000-d683-02a3-cecd-08dc6a9b4ee8",
+     "units": [
+      {
+       "isBase": false,
+       "conversionFactor": "1000",
+       "isFormula": false,
+       "unit": {
+        "id": "01000000-d683-02a3-7f9b-08dc6a9905f1",
+        "name": "Mili Voltage",
+        "symbol": "mV"
+       },
+       "order": 2
+      },
+      {
+       "isBase": true,
+       "isFormula": true,
+       "unit": {
+        "id": "01000000-d683-02a3-1883-08dc6a98f869",
+        "name": "Voltage",
+        "symbol": "V"
+       },
+       "order": 3
+      }
+     ]
+    },
+    "meta": {
+     "order": 60,
+     "displayInFilter": true,
+     "displayInResult": true
+    }
+   }
+  },
+  {
+   "propertyId": "00000000-0000-0000-0000-00000000261f",
+   "name": "Çıkış Akımı",
+   "values": [
+    {
+     "value": "1.5 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "2 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "2.7 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "3 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "3.75 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "4.5 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "10 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "12 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "15 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "20 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "30 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "38 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "40 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "50 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "70 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "75 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "80 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "89 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "100 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "110 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "140 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "150 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "180 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "200 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "250 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "300 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "350 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "400 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "450 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "500 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "550 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "600 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "650 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "700 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "750 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "800 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "950 mA",
+     "unitOrder": "3",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-5555-08dc6a98f0c6"
+    },
+    {
+     "value": "1 A",
+     "unitOrder": "4",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-74bc-08dc6a98e088"
+    },
+    {
+     "value": "1.05 A",
+     "unitOrder": "4",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-74bc-08dc6a98e088"
+    },
+    {
+     "value": "1.2 A",
+     "unitOrder": "4",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-74bc-08dc6a98e088"
+    },
+    {
+     "value": "1.25 A",
+     "unitOrder": "4",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-74bc-08dc6a98e088"
+    },
+    {
+     "value": "1.5 A",
+     "unitOrder": "4",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-74bc-08dc6a98e088"
+    },
+    {
+     "value": "1.8 A",
+     "unitOrder": "4",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-74bc-08dc6a98e088"
+    },
+    {
+     "value": "2 A",
+     "unitOrder": "4",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-74bc-08dc6a98e088"
+    },
+    {
+     "value": "2.2 A",
+     "unitOrder": "4",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-74bc-08dc6a98e088"
+    },
+    {
+     "value": "2.4 A",
+     "unitOrder": "4",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-74bc-08dc6a98e088"
+    },
+    {
+     "value": "3 A",
+     "unitOrder": "4",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-74bc-08dc6a98e088"
+    },
+    {
+     "value": "5 A",
+     "unitOrder": "4",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-74bc-08dc6a98e088"
+    },
+    {
+     "value": "7.5 A",
+     "unitOrder": "4",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": "01000000-d683-02a3-74bc-08dc6a98e088"
+    },
+    {
+     "value": "1 A, 2 A",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1 to 70 mA",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "3.2 A, 280 mA",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "5 to 350 mA",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "150 mA, 300 mA",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "300 mA, 300 mA",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "500 mA, 250 mA",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "600 mA, 600 mA",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "N/A",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    }
+   ],
+   "meta": {
+    "categoryId": "00000000-0000-0000-0000-0000000000dc",
+    "propertyId": "00000000-0000-0000-0000-00000000261f",
+    "propertyName": "Çıkış Akımı",
+    "propertyType": {
+     "id": 1,
+     "isNumeric": true
+    },
+    "measurement": {
+     "id": "01000000-193c-4a71-c26e-08dcb782dcc0",
+     "units": [
+      {
+       "isBase": false,
+       "conversionFactor": "1000",
+       "isFormula": false,
+       "unit": {
+        "id": "01000000-d683-02a3-5555-08dc6a98f0c6",
+        "name": "Mili Amper",
+        "symbol": "mA"
+       },
+       "order": 3
+      },
+      {
+       "isBase": true,
+       "isFormula": true,
+       "unit": {
+        "id": "01000000-d683-02a3-74bc-08dc6a98e088",
+        "name": "Amper",
+        "symbol": "A"
+       },
+       "order": 4
+      }
+     ]
+    },
+    "meta": {
+     "order": 70,
+     "displayInFilter": true,
+     "displayInResult": true
+    }
+   }
+  },
+  {
+   "propertyId": "00000000-0000-0000-0000-0000000025e4",
+   "name": "Çalışma Sıcaklığı",
+   "values": [
+    {
+     "value": "-65 °C ~ +150 °C",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-55 °C ~ +125 °C",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-55 °C ~ +150 °C",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-40 °C ~ +85 °C",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-40 °C ~ +105 °C",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-40 °C ~ +125 °C",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-40 °C ~ +145 °C",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-40 °C ~ +150 °C",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-30 °C ~ +85 °C",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-30 °C ~ +125 °C",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-25 °C ~ +80 °C",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-25 °C ~ +85 °C",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-25 °C ~ +125 °C",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-25 °C ~ +150 °C",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-20 °C ~ +80 °C",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-20 °C ~ +85 °C",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-20 °C ~ +100 °C",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-20 °C ~ +105 °C",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-20 °C ~ +125 °C",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-20 °C ~ +150 °C",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "0 °C ~ +70 °C",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "0 °C ~ +125 °C",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "0 °C ~ +150 °C",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "N/A",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    }
+   ],
+   "meta": {
+    "categoryId": "00000000-0000-0000-0000-0000000000dc",
+    "propertyId": "00000000-0000-0000-0000-0000000025e4",
+    "propertyName": "Çalışma Sıcaklığı",
+    "propertyType": {
+     "id": 1,
+     "isNumeric": true
+    },
+    "measurement": {
+     "id": "01000000-babf-2e46-a2a4-08dc6aadf0f2",
+     "units": [
+      {
+       "isBase": false,
+       "isFormula": false,
+       "unit": {
+        "id": "01000000-e5f5-4281-87c9-08dcc37b311e",
+        "name": "Kelvin",
+        "symbol": "K"
+       },
+       "order": 0
+      },
+      {
+       "isBase": false,
+       "isFormula": false,
+       "unit": {
+        "id": "01000000-d683-02a3-b89c-08dc6a9e9d53",
+        "name": "Fahrenheit",
+        "symbol": "°F"
+       },
+       "order": 0
+      },
+      {
+       "isBase": false,
+       "isFormula": false,
+       "unit": {
+        "id": "01000000-d683-02a3-1c52-08dc6a9e830b",
+        "name": "Celsius",
+        "symbol": "°C"
+       },
+       "order": 0
+      }
+     ]
+    },
+    "meta": {
+     "order": 80,
+     "displayInFilter": true,
+     "displayInResult": true
+    }
+   }
+  },
+  {
+   "propertyId": "00000000-0000-0000-0000-000000002607",
+   "name": "Özellikler",
+   "values": [
+    {
+     "value": "-35V, -200mA UltraLow-Noise, Negative Linear Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "-35V, -200mA, Ultralow-Noise, Negative Linear Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "Precision 0.5A Regulators",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "High Performance 1A LDO",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Low Dropout Positive Regulator 1.2V, 1.5V, 1.8V, 2.5V, 3.3V, 5.0V and Adjustable Outputs",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Low Dropout Regulator for 5V to 3.3V Conversion",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Low-Dropout Regulator for 5-V to 3.3-V Conversion",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Output 78 series Regulators 500mA Output 78 series Regulators",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1-A, 16-V Precision Linear Voltage Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1-A, High-Accuracy, Low-Noise LDO Voltage Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1-A, Ultra-Low Noise, Ultra-High PSRR, Low-Dropout Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1-uA UltraLow IQ, 200mA Low-Dropout Regulator in a Small-Size Package",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1-uA Ultralow IQ, 200-mA, Low-Dropout Regulator in a Small-Size Package",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A 16-V Linear Voltage Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A 16-V Precision Linear Voltage Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A 3-Terminal Positive Voltage Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Fast Ultra Low Dropout Linear Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A LDO Voltage Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A LDO Voltage Regulator with “GreenOperation”",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Low Dropout Linear Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Low Dropout Voltage Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Low Noise CMOS LDO Regulator with ENABLE",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Low Quiescent Current Low-Noise Voltage Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Low-Dropout Positive Voltage Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Low-Dropout Regulator with Reverse Current Protection",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Low-Dropout, 5.0 V Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Low-Voltage uCap LDO Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Low-Voltage, Low Quiescent Current LDO Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Negative Voltage Regulators",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Output 78 series Regulators",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Output Low Dropout Voltage Regulators",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Positive Voltage Regulators",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Ultra Low Dropout Linear Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A, Low IQ, Small-Size, Low-Dropout Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "Fast-Transient Response 1A Low-Dropout Voltage Regulators",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "High Efficiency 1MHz, 2A Step Up Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "Low-Noise, Wide-Bandwidth, High PSRR, Low-Dropout 1-A Linear Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "Low-Noise, Wide-Bandwidth, High PSRR, Low-Dropout 1A Linear Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "Ultralow-Noise High PSRR Fast RF 1-A Low-Dropout Linear Regulators",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1.0 A Low-Dropout Positive Fixed and Adjustable Voltage Regulators",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Adjustable/Fixed Low Dropout Linear Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Dropout Positive Adjustable or Fixed Mode Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Fixed Output LDO Regulators",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Low Dropout Adjustable And Fixed-Mode Regulator with Enable",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Low Dropout Adjustable and Fixed-Mode Regulator with Enable",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Low Dropout CMOS Linear Regulators Stable with Ceramic Output Capacitors",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Low-Dropout Positive Fixed and Adjustable Voltage Regulators",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Positive Fixed Voltage Low Dropout Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1A Positive Fixed-Voltage, Low-Dropout Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1.2V to 37V Adjustable Voltage Regulators",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1.2V to 37V Adjustable Voltage Regulators Double Gauge",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1.2V to 37V Adjustable Voltage Regulators Single Gauge",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "High Current 1.2V to 37V Adjustable Voltage Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "Low Current 1.2 to 37V Adjustable Voltage Regulators",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "Medium Current 1.2V to 37V Adjustable Voltage Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1.2A High PSRR Low-Dropout Linear Voltage Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1.2A Low-Dropout Voltage Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "Low Current 1.25V to 37V Adjustable Voltage Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1.5 A, Very Low-Dropout (VLDO) Fast Transient Response Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "1.5A Adjustable Output, Positive Voltage Regulator",
+     "unitOrder": "2147483647",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    }
+   ],
+   "meta": {
+    "categoryId": "00000000-0000-0000-0000-0000000000dc",
+    "propertyId": "00000000-0000-0000-0000-000000002607",
+    "propertyName": "Özellikler",
+    "propertyType": {
+     "id": 2,
+     "isNumeric": false
+    },
+    "meta": {
+     "order": 90,
+     "displayInFilter": true,
+     "displayInResult": true
+    }
+   }
+  },
+  {
+   "propertyId": "ProductStatus",
+   "name": "Ürün Durumu",
+   "values": [
+    {
+     "value": "-",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "ACTIVE",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "END OF LIFE",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "NRND",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "OBSOLETE",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    }
+   ],
+   "meta": {
+    "categoryId": "00000000-0000-0000-0000-0000000000dc",
+    "propertyId": "ProductStatus",
+    "propertyName": "Ürün Durumu",
+    "propertyType": {
+     "id": 2,
+     "isNumeric": false
+    },
+    "meta": {
+     "order": 7.922816251426434e+28,
+     "displayInFilter": true,
+     "displayInResult": true
+    }
+   }
+  },
+  {
+   "propertyId": "VariantPackageType",
+   "name": "Paket Tipi",
+   "values": [
+    {
+     "value": "AMMO PACK",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "BOX",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "BULK",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "REEL",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "TAPE&BOX",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "TAPE&REEL",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "TRAY",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    },
+    {
+     "value": "TUBE",
+     "unitOrder": "0",
+     "numericValue": 0,
+     "isDisabled": false,
+     "unitId": ""
+    }
+   ],
+   "meta": {
+    "categoryId": "00000000-0000-0000-0000-0000000000dc",
+    "propertyId": "VariantPackageType",
+    "propertyName": "Paket Tipi",
+    "propertyType": {
+     "id": 2,
+     "isNumeric": false
+    },
+    "meta": {
+     "order": 7.922816251426434e+28,
+     "displayInFilter": true,
+     "displayInResult": true
+    }
+   }
+  }
+ ],
+ "tableProperties": [
+  {
+   "propertyId": "00000000-0000-0000-0000-0000000025dd",
+   "name": "Montaj Tipi",
+   "isSortable": true
+  },
+  {
+   "propertyId": "00000000-0000-0000-0000-0000000025df",
+   "name": "Kılıf / Kasa",
+   "isSortable": true
+  },
+  {
+   "propertyId": "00000000-0000-0000-0000-000000002714",
+   "name": "Regülatör Tipi",
+   "isSortable": true
+  },
+  {
+   "propertyId": "00000000-0000-0000-0000-000000002fdc",
+   "name": "Giriş Voltajı (Çalışma)",
+   "isSortable": true
+  },
+  {
+   "propertyId": "00000000-0000-0000-0000-000000002fed",
+   "name": "Giriş Voltajı (Maks)",
+   "isSortable": true
+  },
+  {
+   "propertyId": "00000000-0000-0000-0000-00000000264f",
+   "name": "Çıkış Voltajı",
+   "isSortable": true
+  },
+  {
+   "propertyId": "00000000-0000-0000-0000-00000000261f",
+   "name": "Çıkış Akımı",
+   "isSortable": true
+  },
+  {
+   "propertyId": "00000000-0000-0000-0000-0000000025e4",
+   "name": "Çalışma Sıcaklığı",
+   "isSortable": true
+  },
+  {
+   "propertyId": "00000000-0000-0000-0000-000000002607",
+   "name": "Özellikler",
+   "isSortable": true
+  },
+  {
+   "propertyId": "Tags",
+   "name": "Etiketler",
+   "isSortable": true
+  }
+ ],
+ "hasSpecialVariants": false
+}

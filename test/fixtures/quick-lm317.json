@@ -1,0 +1,239 @@
+{
+ "variants": [
+  {
+   "id": "01000000-0a83-0a58-c9e5-08dda83903d9",
+   "slug": "texas-lm317kct-603104",
+   "mainCategoryId": "00000000-0000-0000-0000-0000000000dc",
+   "sku": "LM317KCT",
+   "description": "IC-317 REG LIN POS ADJ 1.5A TO220-3",
+   "medias": [
+    {
+     "path": "https://cdn.ozdisan.com/public/product/assets/TO220-3.jpg",
+     "field": "Picture",
+     "contentType": "image/jpeg"
+    },
+    {
+     "path": "https://cdn.ozdisan.com/public/product/assets/lm317_texas.pdf",
+     "field": "Datasheet",
+     "contentType": "application/pdf"
+    }
+   ],
+   "category": {
+    "id": "00000000-0000-0000-0000-0000000000dc",
+    "slug": "lineer-voltaj-regulatorleri-279",
+    "slugs": [
+     {
+      "slug": "linear-voltage-regulators-279",
+      "langCode": "en",
+      "isDefault": false
+     },
+     {
+      "slug": "lineer-voltaj-regulatorleri-279",
+      "langCode": "tr",
+      "isDefault": false
+     },
+     {
+      "slug": "Linear-Voltage-Regulators-279",
+      "isDefault": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "01000000-0a81-0a58-ba7b-08dda8390496",
+   "slug": "texas-lm317dcy-603075",
+   "mainCategoryId": "00000000-0000-0000-0000-0000000000dc",
+   "sku": "LM317DCY",
+   "description": "IC-317 REG. LDO ADJ 1.5A SOT223-4",
+   "medias": [
+    {
+     "path": "https://cdn.ozdisan.com/public/product/assets/lm317_texas.pdf",
+     "field": "Datasheet",
+     "contentType": "application/pdf"
+    },
+    {
+     "path": "https://cdn.ozdisan.com/public/product/assets/SOT223-4.jpg",
+     "field": "Picture",
+     "contentType": "image/jpeg"
+    }
+   ],
+   "category": {
+    "id": "00000000-0000-0000-0000-0000000000dc",
+    "slug": "lineer-voltaj-regulatorleri-279",
+    "slugs": [
+     {
+      "slug": "linear-voltage-regulators-279",
+      "langCode": "en",
+      "isDefault": false
+     },
+     {
+      "slug": "lineer-voltaj-regulatorleri-279",
+      "langCode": "tr",
+      "isDefault": false
+     },
+     {
+      "slug": "Linear-Voltage-Regulators-279",
+      "isDefault": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "01000000-0a81-0a58-a16e-08dda839069f",
+   "slug": "texas-lm317kttr-603090",
+   "mainCategoryId": "00000000-0000-0000-0000-0000000000dc",
+   "sku": "LM317KTTR",
+   "description": "IC-317 REG LIN POS ADJ 1.5A TO-263-3 DDPAK",
+   "medias": [
+    {
+     "path": "https://cdn.ozdisan.com/public/product/assets/lm317_texas.pdf",
+     "field": "Datasheet",
+     "contentType": "application/pdf"
+    },
+    {
+     "path": "https://cdn.ozdisan.com/public/product/assets/TO263-3%20%28DDPAK-3%29.jpg",
+     "field": "Picture",
+     "contentType": "image/jpeg"
+    }
+   ],
+   "category": {
+    "id": "00000000-0000-0000-0000-0000000000dc",
+    "slug": "lineer-voltaj-regulatorleri-279",
+    "slugs": [
+     {
+      "slug": "linear-voltage-regulators-279",
+      "langCode": "en",
+      "isDefault": false
+     },
+     {
+      "slug": "lineer-voltaj-regulatorleri-279",
+      "langCode": "tr",
+      "isDefault": false
+     },
+     {
+      "slug": "Linear-Voltage-Regulators-279",
+      "isDefault": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "01000000-0a83-0a58-745a-08dda83c12c6",
+   "slug": "ozd-arduino-lm317-dc-dc-module-626533",
+   "mainCategoryId": "00000000-0000-0000-0000-0000000029b3",
+   "sku": "LM317 DC-DC MODULE",
+   "description": "ARD ACCES LM317 ADJUSTABLE DC-DC VOLT REGULATOR",
+   "medias": [
+    {
+     "path": "https://cdn.ozdisan.com/public/product/assets/LM317%20DC-DC%20MODULE.pdf",
+     "field": "Datasheet",
+     "contentType": "application/pdf"
+    },
+    {
+     "path": "https://cdn.ozdisan.com/public/product/assets/LM317%20DC-DC%20MODULE.jpg",
+     "field": "Picture",
+     "contentType": "image/jpeg"
+    }
+   ],
+   "category": {
+    "id": "00000000-0000-0000-0000-0000000029b3",
+    "slug": "arduino-sensorleri-ve-modulleri-613",
+    "slugs": [
+     {
+      "slug": "arduino-sensorleri-ve-modulleri-613",
+      "langCode": "tr",
+      "isDefault": false
+     },
+     {
+      "slug": "arduino-sensors-and-modules-613",
+      "langCode": "en",
+      "isDefault": false
+     },
+     {
+      "slug": "Arduino-Sensors-and-Modules-613",
+      "isDefault": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "01000000-0a83-0a58-bb2e-08dda83491a9",
+   "slug": "stm-lm317t-28409",
+   "mainCategoryId": "00000000-0000-0000-0000-0000000000dc",
+   "sku": "LM317T",
+   "description": "IC-317 V.REG/STABILIZER 1.5A 125C TO220 ST",
+   "medias": [
+    {
+     "path": "https://cdn.ozdisan.com/public/product/assets/LM217%2C%20LM317.pdf",
+     "field": "Datasheet",
+     "contentType": "application/pdf"
+    },
+    {
+     "path": "https://cdn.ozdisan.com/public/product/assets/TO220-3.jpg",
+     "field": "Picture",
+     "contentType": "image/jpeg"
+    }
+   ],
+   "category": {
+    "id": "00000000-0000-0000-0000-0000000000dc",
+    "slug": "lineer-voltaj-regulatorleri-279",
+    "slugs": [
+     {
+      "slug": "linear-voltage-regulators-279",
+      "langCode": "en",
+      "isDefault": false
+     },
+     {
+      "slug": "lineer-voltaj-regulatorleri-279",
+      "langCode": "tr",
+      "isDefault": false
+     },
+     {
+      "slug": "Linear-Voltage-Regulators-279",
+      "isDefault": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "01000000-0a83-0a58-2812-08dda83903a2",
+   "slug": "stm-lm317p-603070",
+   "mainCategoryId": "00000000-0000-0000-0000-0000000000dc",
+   "sku": "LM317P",
+   "description": "IC-317 REG LIN POS ADJ 1.5A TO220FP",
+   "medias": [
+    {
+     "path": "https://cdn.ozdisan.com/public/product/assets/LM217%2C%20LM317.pdf",
+     "field": "Datasheet",
+     "contentType": "application/pdf"
+    },
+    {
+     "path": "https://cdn.ozdisan.com/public/product/assets/TO220FP.jpg",
+     "field": "Picture",
+     "contentType": "image/jpeg"
+    }
+   ],
+   "category": {
+    "id": "00000000-0000-0000-0000-0000000000dc",
+    "slug": "lineer-voltaj-regulatorleri-279",
+    "slugs": [
+     {
+      "slug": "linear-voltage-regulators-279",
+      "langCode": "en",
+      "isDefault": false
+     },
+     {
+      "slug": "lineer-voltaj-regulatorleri-279",
+      "langCode": "tr",
+      "isDefault": false
+     },
+     {
+      "slug": "Linear-Voltage-Regulators-279",
+      "isDefault": true
+     }
+    ]
+   }
+  }
+ ],
+ "isSingleMatch": false
+}

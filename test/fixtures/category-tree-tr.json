@@ -1,0 +1,468 @@
+{
+ "totalCount": 959359,
+ "categories": [
+  {
+   "name": "Elektronik Komponentler",
+   "slug": "elektronik-komponentler-1",
+   "sequenceId": 1,
+   "level": 1,
+   "productCount": 933800,
+   "subCategories": [
+    {
+     "name": "Güç Yarı İletkenleri",
+     "slug": "guc-yari-iletkenleri-6",
+     "sequenceId": 6,
+     "level": 2,
+     "productCount": 54446,
+     "subCategories": [
+      {
+       "name": "Diyaklar ve Sidaklar",
+       "slug": "diyaklar-ve-sidaklar-36",
+       "sequenceId": 36,
+       "level": 3,
+       "productCount": 266,
+       "subCategories": [
+        {
+         "name": "Diyaklar",
+         "slug": "diyaklar-394",
+         "sequenceId": 394,
+         "level": 4,
+         "productCount": 3,
+         "subCategories": []
+        },
+        {
+         "name": "Sidaklar",
+         "slug": "Sidacs-395",
+         "sequenceId": 395,
+         "level": 4,
+         "productCount": 263,
+         "subCategories": []
+        }
+       ]
+      },
+      {
+       "name": "Diyotlar, Modül Diyotlar ve Doğrultucular",
+       "slug": "diyotlar-modul-diyotlar-ve-dogrultucular-35",
+       "sequenceId": 35,
+       "level": 3,
+       "productCount": 41307,
+       "subCategories": [
+        {
+         "name": "Schottky Diyotlar",
+         "slug": "schottky-diyotlar-385",
+         "sequenceId": 385,
+         "level": 4,
+         "productCount": 4165,
+         "subCategories": []
+        },
+        {
+         "name": "TVS Diyotlar",
+         "slug": "tvs-diyotlar-386",
+         "sequenceId": 386,
+         "level": 4,
+         "productCount": 23078,
+         "subCategories": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Devre Koruyucular",
+     "slug": "devre-koruyucular-7",
+     "sequenceId": 7,
+     "level": 2,
+     "productCount": 40267,
+     "subCategories": [
+      {
+       "name": "Termistörler",
+       "slug": "termistorler-168",
+       "sequenceId": 168,
+       "level": 3,
+       "productCount": 1537,
+       "subCategories": [
+        {
+         "name": "PTC Termistörler",
+         "slug": "ptc-termistorler-851",
+         "sequenceId": 851,
+         "level": 4,
+         "productCount": 280,
+         "subCategories": []
+        },
+        {
+         "name": "NTC Termistörler",
+         "slug": "ntc-termistorler-852",
+         "sequenceId": 852,
+         "level": 4,
+         "productCount": 1257,
+         "subCategories": []
+        }
+       ]
+      },
+      {
+       "name": "Devre, Akım ve Gerilim Koruyucular",
+       "slug": "devre-akim-ve-gerilim-koruyucular-169",
+       "sequenceId": 169,
+       "level": 3,
+       "productCount": 21379,
+       "subCategories": [
+        {
+         "name": "Tristör Gerilim Koruyucular",
+         "slug": "tristor-gerilim-koruyucular-853",
+         "sequenceId": 853,
+         "level": 4,
+         "productCount": 1118,
+         "subCategories": []
+        },
+        {
+         "name": "Akım Koruyucular",
+         "slug": "akim-koruyucular-854",
+         "sequenceId": 854,
+         "level": 4,
+         "productCount": 18,
+         "subCategories": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Entegre Devreler (IC'ler)",
+     "slug": "entegre-devreler-icler-9",
+     "sequenceId": 9,
+     "level": 2,
+     "productCount": 34554,
+     "subCategories": [
+      {
+       "name": "Embedded Entegreler",
+       "slug": "embedded-entegreler-52",
+       "sequenceId": 52,
+       "level": 3,
+       "productCount": 7966,
+       "subCategories": [
+        {
+         "name": "SoC Yonga Sistemi",
+         "slug": "soc-yonga-sistemi-215",
+         "sequenceId": 215,
+         "level": 4,
+         "productCount": 11,
+         "subCategories": []
+        },
+        {
+         "name": "Diğer Embedded Entegreler",
+         "slug": "diger-embedded-entegreler-216",
+         "sequenceId": 216,
+         "level": 4,
+         "productCount": 4,
+         "subCategories": []
+        },
+        {
+         "name": "Mikroişlemciler",
+         "slug": "mikroislemciler-218",
+         "sequenceId": 218,
+         "level": 4,
+         "productCount": 7922,
+         "subCategories": []
+        }
+       ]
+      },
+      {
+       "name": "Filtreler",
+       "slug": "filtreler-58",
+       "sequenceId": 58,
+       "level": 3,
+       "productCount": 13,
+       "subCategories": [
+        {
+         "name": "EMI, RFI Filtre Entegreleri",
+         "slug": "emi-rfi-filtre-entegreleri-220",
+         "sequenceId": 220,
+         "level": 4,
+         "productCount": 10,
+         "subCategories": []
+        },
+        {
+         "name": "Aktif Filtre Entegreleri",
+         "slug": "aktif-filtre-entegreleri-221",
+         "sequenceId": 221,
+         "level": 4,
+         "productCount": 3,
+         "subCategories": []
+        }
+       ]
+      },
+      {
+       "name": "Güç Entegreleri",
+       "slug": "guc-entegreleri-55",
+       "sequenceId": 55,
+       "level": 3,
+       "productCount": 8375,
+       "subCategories": [
+        {
+         "name": "Batarya Yönetimi Entegreleri",
+         "slug": "batarya-yonetimi-entegreleri-272",
+         "sequenceId": 272,
+         "level": 4,
+         "productCount": 149,
+         "subCategories": []
+        },
+        {
+         "name": "DC-DC Voltaj Kontrolörleri",
+         "slug": "dc-dc-voltaj-kontrolorleri-274",
+         "sequenceId": 274,
+         "level": 4,
+         "productCount": 320,
+         "subCategories": []
+        },
+        {
+         "name": "Lineer Voltaj Regülatörleri",
+         "slug": "lineer-voltaj-regulatorleri-279",
+         "sequenceId": 279,
+         "level": 4,
+         "productCount": 3420,
+         "subCategories": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "LED & Aydınlatma Ürünleri",
+   "slug": "led-and-aydinlatma-urunleri-2",
+   "sequenceId": 2,
+   "level": 1,
+   "productCount": 7155,
+   "subCategories": [
+    {
+     "name": "LED Devre Koruyucular",
+     "slug": "led-devre-koruyucular-100",
+     "sequenceId": 100,
+     "level": 2,
+     "productCount": 176,
+     "subCategories": [
+      {
+       "name": "LED Şönt Koruyucular",
+       "slug": "led-sont-koruyucular-955",
+       "sequenceId": 955,
+       "level": 3,
+       "productCount": 43,
+       "subCategories": []
+      },
+      {
+       "name": "LED Transformatörler",
+       "slug": "led-transformatorler-956",
+       "sequenceId": 956,
+       "level": 3,
+       "productCount": 3,
+       "subCategories": []
+      }
+     ]
+    },
+    {
+     "name": "Mobilya Aydınlatma",
+     "slug": "mobilya-aydinlatma-101",
+     "sequenceId": 101,
+     "level": 2,
+     "productCount": 21,
+     "subCategories": [
+      {
+       "name": "Gömme Spotlar",
+       "slug": "gomme-spotlar-669",
+       "sequenceId": 669,
+       "level": 3,
+       "productCount": 4,
+       "subCategories": []
+      },
+      {
+       "name": "Yarım Ay Vitrin Lamba",
+       "slug": "yarim-ay-vitrin-lamba-670",
+       "sequenceId": 670,
+       "level": 3,
+       "productCount": 4,
+       "subCategories": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Maker & IoT Ürünleri",
+   "slug": "maker-and-iot-urunleri-3",
+   "sequenceId": 3,
+   "level": 1,
+   "productCount": 3519,
+   "subCategories": [
+    {
+     "name": "3D Yazıcılar ve Filamentler",
+     "slug": "3d-yazicilar-ve-filamentler-140",
+     "sequenceId": 140,
+     "level": 2,
+     "productCount": 89,
+     "subCategories": [
+      {
+       "name": "3D Yazıcılar",
+       "slug": "3d-yazicilar-902",
+       "sequenceId": 902,
+       "level": 3,
+       "productCount": 14,
+       "subCategories": []
+      },
+      {
+       "name": "3D Yazıcı Aksesuarları",
+       "slug": "3d-yazici-aksesuarlari-904",
+       "sequenceId": 904,
+       "level": 3,
+       "productCount": 46,
+       "subCategories": []
+      }
+     ]
+    },
+    {
+     "name": "Arduino",
+     "slug": "arduino-132",
+     "sequenceId": 132,
+     "level": 2,
+     "productCount": 989,
+     "subCategories": [
+      {
+       "name": "Arduino Sensörleri ve Modülleri",
+       "slug": "arduino-sensorleri-ve-modulleri-613",
+       "sequenceId": 613,
+       "level": 3,
+       "productCount": 726,
+       "subCategories": []
+      },
+      {
+       "name": "Arduino Shield'ler",
+       "slug": "arduino-shieldler-1002530",
+       "sequenceId": 1002530,
+       "level": 3,
+       "productCount": 86,
+       "subCategories": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Üretim Ekipmanları",
+   "slug": "uretim-ekipmanlari-4",
+   "sequenceId": 4,
+   "level": 1,
+   "productCount": 3461,
+   "subCategories": [
+    {
+     "name": "ESD Giyim Ürünleri",
+     "slug": "esd-giyim-urunleri-158",
+     "sequenceId": 158,
+     "level": 2,
+     "productCount": 227,
+     "subCategories": [
+      {
+       "name": "ESD Ayakkabılar",
+       "slug": "esd-ayakkabilar-896",
+       "sequenceId": 896,
+       "level": 3,
+       "productCount": 34,
+       "subCategories": []
+      },
+      {
+       "name": "ESD Terlikler",
+       "slug": "esd-terlikler-897",
+       "sequenceId": 897,
+       "level": 3,
+       "productCount": 62,
+       "subCategories": []
+      }
+     ]
+    },
+    {
+     "name": "Kimyasallar",
+     "slug": "kimyasallar-159",
+     "sequenceId": 159,
+     "level": 2,
+     "productCount": 58,
+     "subCategories": [
+      {
+       "name": "Spreyler",
+       "slug": "spreyler-829",
+       "sequenceId": 829,
+       "level": 3,
+       "productCount": 44,
+       "subCategories": []
+      },
+      {
+       "name": "Kremler",
+       "slug": "kremler-830",
+       "sequenceId": 830,
+       "level": 3,
+       "productCount": 5,
+       "subCategories": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Otomasyon Ürünleri",
+   "slug": "otomasyon-urunleri-5",
+   "sequenceId": 5,
+   "level": 1,
+   "productCount": 11424,
+   "subCategories": [
+    {
+     "name": "PLC - Programlanabilir Logic Kontrolörler",
+     "slug": "plc-126",
+     "sequenceId": 126,
+     "level": 2,
+     "productCount": 337,
+     "subCategories": [
+      {
+       "name": "PLC - CPU'lar",
+       "slug": "plc-cpular-528",
+       "sequenceId": 528,
+       "level": 3,
+       "productCount": 85,
+       "subCategories": []
+      },
+      {
+       "name": "PLC Ek Modüller",
+       "slug": "plc-ek-moduller-1005769",
+       "sequenceId": 1005769,
+       "level": 3,
+       "productCount": 149,
+       "subCategories": []
+      }
+     ]
+    },
+    {
+     "name": "Motion Kontrolcüler",
+     "slug": "motion-kontrolculer-1005771",
+     "sequenceId": 1005771,
+     "level": 2,
+     "productCount": 81,
+     "subCategories": [
+      {
+       "name": "Motion CPU'lar",
+       "slug": "motion-cpular-1005772",
+       "sequenceId": 1005772,
+       "level": 3,
+       "productCount": 42,
+       "subCategories": []
+      },
+      {
+       "name": "Motion Ek Modüller",
+       "slug": "motion-ek-moduller-1005773",
+       "sequenceId": 1005773,
+       "level": 3,
+       "productCount": 22,
+       "subCategories": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

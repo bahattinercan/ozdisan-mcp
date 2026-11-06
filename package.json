@@ -1,0 +1,66 @@
+{
+  "name": "ozdisan-mcp",
+  "version": "0.1.0",
+  "description": "Özdisan Elektronik (ozdisan.com) için yerel çalışan MCP sunucusu: 1M+ elektronik komponentte arama, kategori gezme, parametrik filtreleme, ürün detayı, fiyat/stok, muadil ürün ve datasheet indirme/okuma.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ozdisan",
+    "özdisan",
+    "elektronik",
+    "komponent",
+    "electronic-components",
+    "datasheet",
+    "claude",
+    "cursor",
+    "ai",
+    "pcb",
+    "bom"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mert-ozkul/ozdisan-mcp.git"
+  },
+  "homepage": "https://github.com/mert-ozkul/ozdisan-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/mert-ozkul/ozdisan-mcp/issues"
+  },
+  "type": "module",
+  "bin": {
+    "ozdisan-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/chmod-bin.mjs",
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run --project unit",
+    "test:e2e": "npm run build && vitest run --project e2e",
+    "test:all": "npm run build && vitest run",
+    "inspect": "npx -y @modelcontextprotocol/inspector node dist/index.js",
+    "prepare": "npm run build",
+    "fixtures": "node scripts/update-fixtures.mjs",
+    "prepublishOnly": "npm run typecheck && npm test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "unpdf": "~1.7.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}

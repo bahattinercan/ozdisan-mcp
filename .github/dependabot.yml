@@ -1,0 +1,25 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    groups:
+      # MCP SDK ve zod birlikte yükseltilmeli: şema/SDK uyumu birlikte test edilir.
+      mcp-and-schema:
+        patterns:
+          - "@modelcontextprotocol/sdk"
+          - "zod"
+      dev-tooling:
+        dependency-type: development
+    ignore:
+      # unpdf büyük sürüm atlamaları PDF metin çıkarımını bozabilir; elle yükseltilir.
+      - dependency-name: unpdf
+        update-types: ["version-update:semver-major"]
+
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: monthly

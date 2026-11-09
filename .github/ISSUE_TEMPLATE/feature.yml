@@ -1,0 +1,25 @@
+name: Öneri / yeni yetenek
+description: Yeni araç, filtre veya davranış önerisi
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Hangi sorunu çözüyor?
+      description: Kullanım senaryosu üzerinden anlatın (ör. "BOM'da muadil zinciri kurmak istiyorum").
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Öneri
+      description: Araç adı, parametreler, dönen veri. Mümkünse hangi Özdisan uç noktasından geldiği.
+    validations:
+      required: false
+  - type: checkboxes
+    id: constraints
+    attributes:
+      label: Kısıtlar
+      options:
+        - label: Salt okunur kalmalı (sipariş/giriş yok)
+        - label: Yeni bağımlılık gerektirmemeli

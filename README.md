@@ -86,8 +86,8 @@ Ardından kullandığınız yapay zekâ aracına aşağıdaki MCP sunucu tanım�
 
 İstemcinizi yeniden başlatın ve şunu sorun: *"Özdisan'da stokta olan, 3.3V çıkışlı, en az 500mA veren SOT-23 kılıflı LDO'ları fiyata göre listele."*
 
-> **npm'de henüz yoksa / doğrudan GitHub'dan kullanmak isterseniz:** `"args": ["-y", "github:mert-ozkul/ozdisan-mcp"]`
-> (ilk çalıştırmada derleme yapıldığı için biraz daha uzun sürer).
+> **Bu paket npm'de yayında:** `ozdisan-mcp@0.1.x`. GitHub'dan (fork'unuzdan veya upstream'den) kurmak isterseniz
+> `"args": ["-y", "github:mert-ozkul/ozdisan-mcp"]` kullanın (ilk çalıştırmada derleme yaptığı için biraz daha uzun sürer).
 
 ## Kurulum (istemciye göre)
 
@@ -364,6 +364,7 @@ En sonda KDV hariç toplam. Tek çağrıda en fazla 60 satır işlenir (satır b
 | `OZDISAN_MIN_INTERVAL_MS` | `250` | İki istek arasındaki en kısa süre |
 | `OZDISAN_MAX_CONCURRENCY` | `2` | Aynı anda en fazla istek sayısı |
 | `OZDISAN_MAX_DOWNLOAD_MB` | `50` | İndirilebilecek en büyük dosya |
+| `OZDISAN_BASE_URL` | `https://www.ozdisan.com` | Sunucunun okuduğu site kökü (ayna/proxy/test için) |
 
 Her araç ayrıca `currency` ve `language` parametreleriyle çağrı bazında da ayarlanabilir.
 
@@ -388,8 +389,14 @@ npm run dev          # TypeScript kaynağından çalıştır
 npm run typecheck    # tip kontrolü
 npm test             # birim testleri (ağ gerektirmez)
 npm run test:e2e     # uçtan uca testler (canlı ozdisan.com'a bağlanır)
+npm run doctor       # canlı uç noktaları tek tek denetler (PASS/FAIL tablosu, sitenin yapısı değiştiyse burada görünür)
 npm run inspect      # MCP Inspector ile araçları elle deneyin
 ```
+
+**Bir şeyler bozulduğunda:** araçlar tuhaf sonuç veriyorsa önce `npm run doctor` çalıştırın. Özdisan sitesi
+HTML/API yapısını değiştirdiğinde sunucu bunu **kullanıcı hatası gibi göstermez**: "ürün bulunamadı" demek yerine
+`SiteContractError` döner ve mesajda `npm run doctor` + güncelleme gereksinimi yazar. `--json` ile makine tarafından
+okunabilir çıktı alınır (`node scripts/doctor.mjs --json`).
 
 **Test yapısı**
 
@@ -424,8 +431,25 @@ Filtrelerde özellik adlarını iki dilde de yazabilirsiniz.
 **"Hiç ürün bulunamadı" diyor.**
 Filtreler çok dar olabilir. `get_category_filters` aracına mevcut filtrelerinizi verirseniz hâlâ seçilebilir değerleri ve kalan ürün sayısını görürsünüz.
 
+**Araçlar eskiden çalışıyordu, şimdi saçmalıyor.**
+Özdisan site yapısını değiştirmiş olabilir. `npm run doctor` çalıştırın: yedi uç noktayı tek tek dener ve hangisinin
+bozulduğunu söyler. Sunucu bu durumda "ürün bulunamadı" demez, `SiteContractError` ile açık uyarı verir.
+
 **Kurumsal hesabımla giriş yapıp kendi fiyatlarımı görebilir miyim?**
 Şu an desteklenmiyor; yalnızca misafir fiyatları gösterilir.
+
+## Bu depo hakkında (fork)
+
+Bu depo [`mert-ozkul/ozdisan-mcp`](https://github.com/mert-ozkul/ozdisan-mcp) projesinin bir çatalıdır; özgün kod ve
+MIT lisansı korunmuştur. Çatalda yapılanlar:
+
+- **Sessiz hata maskeleme kaldırıldı:** site HTML/API yapısı değiştiğinde araçlar artık "bulunamadı" demiyor;
+  `SiteContractError` + `npm run doctor` yönlendirmesi dönüyor.
+- **Uç nokta sözleşmesi denetimi:** kategori ağacı, ürün listesi, filtre ve hızlı arama yanıtları beklenen alanları
+  taşımıyorsa boş sonuç yerine açık hata veriliyor.
+- **`npm run doctor`:** canlı uç noktaları tek tek denetleyen teşhis komutu (`--json` destekli).
+- Doküman tutarsızlıkları giderildi (`OZDISAN_BASE_URL`, npm durumu), `SECURITY.md`, `CONTRIBUTING.md`, dependabot ve
+  yayın iş akışı eklendi.
 
 ## Sorumluluk reddi
 

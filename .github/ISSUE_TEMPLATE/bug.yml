@@ -1,0 +1,46 @@
+name: Hata bildirimi
+description: Bir araç yanlış sonuç veriyor, çöküyor veya site değişikliği şüphesi var
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Teşekkürler. Lütfen önce `npm run doctor` çalıştırın; site yapısı değiştiyse sorun burada görünür.
+  - type: input
+    id: version
+    attributes:
+      label: ozdisan-mcp sürümü
+      description: "`ozdisan-mcp --version` veya MCP yapılandırmanızdaki sürüm"
+    validations:
+      required: true
+  - type: input
+    id: node
+    attributes:
+      label: Node.js sürümü
+      description: "`node --version`"
+    validations:
+      required: true
+  - type: textarea
+    id: doctor
+    attributes:
+      label: "`npm run doctor --json` çıktısı"
+      description: Site değişikliği şüphesinde zorunlu. Çıktı yoksa `npm run doctor` çalıştırıp yapıştırın.
+      render: json
+    validations:
+      required: false
+  - type: textarea
+    id: what
+    attributes:
+      label: Ne oldu, ne bekleniyordu?
+      description: Araç adı, verilen parametreler ve dönen sonuç (fiyat/stok değerlerini maskeleyebilirsiniz).
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Yeniden üretme adımları
+      placeholder: |
+        1. get_product ile "..." sorgula
+        2. Dönen sonuç: ...
+    validations:
+      required: true

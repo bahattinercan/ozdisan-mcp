@@ -1,0 +1,66 @@
+name: Publish
+
+# Etiket atıldığında npm'e yayınlar (elle de çalıştırılabilir, önce kuru çalıştırma yapar).
+# Gereksinimler:
+#   - Depo sırrı: NPM_TOKEN (npm "Automation" token)
+#   - package.json "name" alanı npm'de size ait olmalı. `ozdisan-mcp` adı zaten alınmış durumda:
+#     kendi yayınınız için "@kullanici/ozdisan-mcp" gibi kapsamlı (scoped) bir ad kullanın.
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Sadece kuru çalıştırma yap (npm'e yayınlama)"
+        type: boolean
+        default: true
+
+jobs:
+  publish:
+    name: npm yayını
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write # npm provenance için
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          registry-url: https://registry.npmjs.org
+
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+
+      # Yayınlanacak içerikte dist, README, LICENSE ve CHANGELOG var mı?
+      - name: Paket içeriğini denetle
+        run: |
+          npm pack --dry-run
+          test -f dist/index.js
+          test -f README.md
+          test -f LICENSE
+
+      # Sürüm etiketle uyuşuyor mu? (v0.1.1 == package.json 0.1.1)
+      - name: Etiket/sürüm denetimi
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: |
+          pkg="$(node -p "require('./package.json').version")"
+          tag="${GITHUB_REF_NAME#v}"
+          if [ "$pkg" != "$tag" ]; then
+            echo "package.json sürümü ($pkg) etiketle ($tag) uyuşmuyor." >&2
+            exit 1
+          fi
+
+      - name: Kuru çalıştırma
+        if: github.event_name == 'workflow_dispatch' && inputs.dry_run
+        run: npm publish --dry-run --provenance --access public
+
+      - name: Yayınla
+        if: startsWith(github.ref, 'refs/tags/v') || (github.event_name == 'workflow_dispatch' && !inputs.dry_run)
+        run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

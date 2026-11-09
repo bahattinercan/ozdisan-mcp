@@ -23,6 +23,18 @@ export class UserInputError extends Error {
   }
 }
 
+/**
+ * Sitenin veri sözleşmesi (JSON API alanları veya sayfa HTML yapısı) beklenenden farklı.
+ * Ağ hatası değildir: Özdisan tarafı değişmiş, sunucunun güncellenmesi gerekebilir.
+ * Kullanıcı girdisiyle karıştırılmaması için OzdisanError'dan ayrı bir türdür.
+ */
+export class SiteContractError extends OzdisanError {
+  constructor(message: string, url?: string) {
+    super(message, undefined, url);
+    this.name = "SiteContractError";
+  }
+}
+
 /** İstemci aracı çağrısını iptal ettiğinde fırlatılır. */
 export class CancelledError extends Error {
   constructor() {

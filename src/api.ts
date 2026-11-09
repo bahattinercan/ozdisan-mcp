@@ -3,7 +3,7 @@ import { mkdir, open, rename, rm, stat } from "node:fs/promises";
 import { basename, extname, join, resolve as resolvePath } from "node:path";
 import { DiskCache, MemoryCache } from "./cache.js";
 import type { Config, Currency, Language } from "./config.js";
-import { CancelledError, currentSignal, HttpClient, isOzdisanHost, OzdisanError, UserInputError } from "./http.js";
+import { CancelledError, currentSignal, HttpClient, isOzdisanHost, OzdisanError, SiteContractError, UserInputError } from "./http.js";
 import { assertPublicUrl, externalGet } from "./netguard.js";
 import { compact, similarity } from "./text.js";
 import type {
@@ -66,16 +66,54 @@ export function trailingId(input: string): string | undefined {
   return m?.[1];
 }
 
-/** __NEXT_DATA__ içindeki pageProps nesnesini çıkarır. */
-export function extractNextData(html: string): Record<string, unknown> | undefined {
+/** __NEXT_DATA__ okumasının sonucu: eksik/bozuk olması site yapısının değiştiğini gösterir. */
+export type NextDataRead =
+  | { status: "ok"; props: Record<string, unknown> }
+  | { status: "missing" }
+  | { status: "invalid" };
+
+/** __NEXT_DATA__ içindeki pageProps nesnesini okur; eksik/bozuk durumu ayrı bildirir. */
+export function readNextData(html: string): NextDataRead {
   const m = html.match(/<script id="__NEXT_DATA__" type="application\/json"[^>]*>([\s\S]*?)<\/script>/);
-  if (!m?.[1]) return undefined;
+  if (!m?.[1]) return { status: "missing" };
   try {
-    const parsed = JSON.parse(m[1]) as { props?: { pageProps?: Record<string, unknown> } };
-    return parsed.props?.pageProps;
+    const parsed = JSON.parse(m[1]) as { props?: { pageProps?: unknown } };
+    const props = parsed?.props?.pageProps;
+    if (!props || typeof props !== "object" || Array.isArray(props)) return { status: "invalid" };
+    return { status: "ok", props: props as Record<string, unknown> };
   } catch {
-    return undefined;
+    return { status: "invalid" };
   }
+}
+
+/** __NEXT_DATA__ içindeki pageProps nesnesini çıkarır (yoksa undefined). */
+export function extractNextData(html: string): Record<string, unknown> | undefined {
+  const read = readNextData(html);
+  return read.status === "ok" ? read.props : undefined;
+}
+
+/** Sitenin veri sözleşmesi bozulduğunda kullanıcı girdisi hatası yerine açık bir uyarı fırlatır. */
+function siteContractError(what: string): never {
+  throw new SiteContractError(
+    `${what} beklenen yapıda değil. Özdisan sitesi değişmiş olabilir; "npm run doctor" ile uç noktaları denetleyin, ` +
+      `sorun sürüyorsa ozdisan-mcp güncellemesi gerekir.`,
+  );
+}
+
+/** Kategori ağacı yanıtının beklenen alanları taşıyıp taşımadığını denetler. */
+function assertCategoryNodes(value: unknown, what: string): RawCategoryNode[] {
+  if (!Array.isArray(value)) siteContractError(what);
+  const nodes = value as RawCategoryNode[];
+  const valid = nodes.every(
+    (n) =>
+      !!n &&
+      typeof n === "object" &&
+      typeof n.name === "string" &&
+      typeof n.slug === "string" &&
+      Number.isInteger(n.sequenceId),
+  );
+  if (!valid) siteContractError(`${what} (kategori alanları eksik)`);
+  return nodes;
 }
 
 function flattenTree(roots: RawCategoryNode[]): Pick<CategoryIndex, "bySeq" | "nodes"> {
@@ -180,10 +218,11 @@ export class OzdisanClient {
           { filters: {} },
           { lang },
         );
-        raw = { totalCount: res.totalCount ?? 0, roots: slimTree(res.categories) };
+        const categories = assertCategoryNodes(res?.categories, "Kategori ağacı yanıtı (/api/categories/categories)");
+        raw = { totalCount: res.totalCount ?? 0, roots: slimTree(categories) };
         if (raw.roots.length > 0) await this.disk.set(diskKey, raw);
       }
-      if (!raw.roots.length) throw new OzdisanError("Kategori ağacı alınamadı.");
+      if (!raw.roots.length) throw new OzdisanError("Kategori ağacı alınamadı (site boş liste döndürdü).");
       return { roots: raw.roots, totalCount: raw.totalCount, ...flattenTree(raw.roots) };
     });
   }
@@ -195,9 +234,11 @@ export class OzdisanClient {
   ): Promise<RawCategorySearchResponse> {
     const lang = this.lang(language);
     const body = { filters: Object.fromEntries(Object.entries(filters).filter(([, v]) => v !== undefined && v !== "")) };
-    return this.memory.getOrLoad(`catsearch:${lang}:${JSON.stringify(body)}`, 5 * MINUTE, () =>
-      this.http.postJson<RawCategorySearchResponse>("/api/categories/categories", body, { lang }),
-    );
+    return this.memory.getOrLoad(`catsearch:${lang}:${JSON.stringify(body)}`, 5 * MINUTE, async () => {
+      const res = await this.http.postJson<RawCategorySearchResponse>("/api/categories/categories", body, { lang });
+      assertCategoryNodes(res?.categories, "Kategori arama yanıtı (/api/categories/categories)");
+      return res;
+    });
   }
 
   /**
@@ -288,7 +329,7 @@ export class OzdisanClient {
     const key = `list:${lang}:${JSON.stringify(body)}`;
     return this.memory.getOrLoad(key, 5 * MINUTE, async () => {
       const res = await this.http.postJson<RawListResponse>("/api/ps", body, { lang });
-      if (!res?.variantList) throw new OzdisanError("Ürün listesi alınamadı (beklenmeyen yanıt).");
+      if (!res?.variantList) siteContractError("Ürün listesi yanıtı (/api/ps, variantList yok)");
       return res;
     });
   }
@@ -315,9 +356,11 @@ export class OzdisanClient {
       filters: Object.fromEntries(Object.entries(filters).filter(([, v]) => Array.isArray(v) && v.length > 0)),
       search: search ?? "",
     };
-    return this.memory.getOrLoad(`topfilter:${lang}:${JSON.stringify(body)}`, 10 * MINUTE, () =>
-      this.http.postJson<RawTopFilterResponse>("/api/ps", body, { lang }),
-    );
+    return this.memory.getOrLoad(`topfilter:${lang}:${JSON.stringify(body)}`, 10 * MINUTE, async () => {
+      const res = await this.http.postJson<RawTopFilterResponse>("/api/ps", body, { lang });
+      if (!Array.isArray(res?.propertyFilters)) siteContractError("Kategori filtre yanıtı (/api/ps, propertyFilters yok)");
+      return res;
+    });
   }
 
   // ---------------------------------------------------------------- Arama
@@ -325,9 +368,15 @@ export class OzdisanClient {
   async quickSearch(text: string, language?: Language): Promise<RawQuickSearchResponse> {
     const lang = this.lang(language);
     const q = text.trim();
-    return this.memory.getOrLoad(`quick:${lang}:${q.toLowerCase()}`, 5 * MINUTE, () =>
-      this.http.getJson<RawQuickSearchResponse>("/api/layout/header", { lang, query: { text: q } }),
-    );
+    return this.memory.getOrLoad(`quick:${lang}:${q.toLowerCase()}`, 5 * MINUTE, async () => {
+      const res = await this.http.getJson<RawQuickSearchResponse>("/api/layout/header", { lang, query: { text: q } });
+      // Boş arama sonucu { isSingleMatch: false } olarak döner; bu geçerlidir. Dizi/null ise sözleşme bozulmuştur.
+      if (!res || typeof res !== "object" || Array.isArray(res)) siteContractError("Hızlı arama yanıtı (/api/layout/header)");
+      if (res.variants !== undefined && !Array.isArray(res.variants)) {
+        siteContractError("Hızlı arama yanıtı (/api/layout/header, variants dizi değil)");
+      }
+      return res;
+    });
   }
 
   quickVariantUrl(v: RawQuickSearchVariant, lang: Language): string {
@@ -456,8 +505,22 @@ export class OzdisanClient {
         }
         throw err;
       }
-      const props = extractNextData(page.text) as (RawProductPage & { error?: unknown }) | undefined;
-      if (!props?.data?.erpRefId) throw new UserInputError(`${erpRefId} kodlu ürün Özdisan'da bulunamadı.`);
+      const read = readNextData(page.text);
+      if (read.status !== "ok") {
+        siteContractError(
+          read.status === "missing"
+            ? "Ürün sayfası HTML'i (__NEXT_DATA__ betiği yok)"
+            : "Ürün sayfası HTML'i (__NEXT_DATA__ bozuk veya pageProps yok)",
+        );
+      }
+      const props = read.props as unknown as (RawProductPage & { error?: unknown }) | undefined;
+      if (!props?.data?.erpRefId) {
+        // Gerçek "ürün yok" durumu: site 200 döner ama pageProps.error doludur.
+        if (props?.error === undefined || props.error === null || props.error === false) {
+          siteContractError(`Ürün sayfası verisi (${erpRefId} için pageProps.data yok, error alanı da boş)`);
+        }
+        throw new UserInputError(`${erpRefId} kodlu ürün Özdisan'da bulunamadı.`);
+      }
       return { ...props, url: page.finalUrl };
     });
   }

@@ -3,7 +3,7 @@ import type { CallToolResult, ServerNotification, ServerRequest } from "@modelco
 import { z } from "zod";
 import type { OzdisanClient } from "../api.js";
 import { CURRENCIES, LANGUAGES, type Currency, type Language } from "../config.js";
-import { CancelledError, OzdisanError, runWithSignal, throwIfCancelled, UserInputError } from "../http.js";
+import { CancelledError, OzdisanError, runWithSignal, SiteContractError, throwIfCancelled, UserInputError } from "../http.js";
 import { clean } from "../normalize.js";
 
 export interface ToolContext {
@@ -56,6 +56,23 @@ export function fail(error: unknown): CallToolResult {
   }
   if (error instanceof CancelledError) {
     return { isError: true, content: [{ type: "text", text: JSON.stringify({ error: error.message }) }] };
+  }
+  if (error instanceof SiteContractError) {
+    return {
+      isError: true,
+      content: [
+        {
+          type: "text",
+          text: JSON.stringify({
+            error: error.message,
+            hint:
+              "Özdisan sitesinin veri yapısı değişmiş olabilir; bu bir ağ/bağlantı sorunu değildir. " +
+              "'npm run doctor' ile uç noktaları denetleyin, sorun sürüyorsa ozdisan-mcp güncellemesi gerekir. " +
+              "Bu arada product/category alanlarını kullanıcıya 'bulunamadı' diye bildirmeyin.",
+          }),
+        },
+      ],
+    };
   }
   if (error instanceof OzdisanError) {
     return {

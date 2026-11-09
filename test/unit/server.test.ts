@@ -3,6 +3,8 @@ import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
 import { existsSync, readFileSync } from "node:fs";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { createServer } from "../../src/server.js";
+import { fail } from "../../src/tools/shared.js";
+import { SiteContractError } from "../../src/http.js";
 import { fixture, html, json, mockFetch, nextDataPage, testConfig } from "../helpers.js";
 import { makePdf } from "../pdf-helper.js";
 
@@ -248,5 +250,15 @@ describe("MCP sunucusu (sahte ağ ile)", () => {
   it("read_datasheet parametre doğrulaması yapar", async () => {
     const { isError } = await call("read_datasheet", {});
     expect(isError).toBe(true);
+  });
+});
+
+describe("SiteContractError kullanıcıya doğru ipucu verir", () => {
+  it("ipucu doctor komutuna ve güncellemeye yönlendirir", () => {
+    const res = fail(new SiteContractError("Kategori yanıtı beklenen yapıda değil."));
+    const text = (res.content as Array<{ text: string }>)[0]!.text;
+    expect(res.isError).toBe(true);
+    expect(text).toContain("doctor");
+    expect(text).toContain("veri");
   });
 });

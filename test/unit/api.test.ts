@@ -1,7 +1,7 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { extractNextData, leafHits, OzdisanClient, sanitizeFileName, trailingId } from "../../src/api.js";
 import { MemoryCache } from "../../src/cache.js";
-import { HttpClient, OzdisanError, UserInputError } from "../../src/http.js";
+import { HttpClient, OzdisanError, SiteContractError, UserInputError } from "../../src/http.js";
 import type { RawCategoryNode } from "../../src/types.js";
 import { existsSync, readdirSync } from "node:fs";
 import { fixture, html, json, mockFetch, nextDataPage, tempDir, testConfig } from "../helpers.js";
@@ -292,3 +292,72 @@ describe("MemoryCache", () => {
   });
 });
 
+
+describe("site sözleşmesi bozulduğunda sessizce 'bulunamadı' demez", () => {
+  const brokenError = async (p: Promise<unknown>) => p.then(() => undefined, (e: unknown) => e);
+
+  it("ürün sayfasında __NEXT_DATA__ hiç yoksa SiteContractError verir", async () => {
+    vi.stubGlobal("fetch", async () => html('<html><body><div id="__next">yeni site</div></body></html>'));
+    const client = new OzdisanClient(testConfig());
+    const err = await brokenError(client.getProductPage("368374"));
+    expect(err).toBeInstanceOf(SiteContractError);
+    expect((err as Error).message).not.toMatch(/bulunamadı/);
+    expect((err as Error).message).toContain("doctor");
+  });
+
+  it("__NEXT_DATA__ JSON'u bozuksa SiteContractError verir", async () => {
+    vi.stubGlobal("fetch", async () => html('<script id="__NEXT_DATA__" type="application/json">{bozuk</script>'));
+    const client = new OzdisanClient(testConfig());
+    expect(await brokenError(client.getProductPage("368374"))).toBeInstanceOf(SiteContractError);
+  });
+
+  it("pageProps'ta ne data ne error varsa SiteContractError verir", async () => {
+    vi.stubGlobal("fetch", async () => html(nextDataPage({ locale: "tr", session: null })));
+    const client = new OzdisanClient(testConfig());
+    expect(await brokenError(client.getProductPage("368374"))).toBeInstanceOf(SiteContractError);
+  });
+
+  it("pageProps.error doluysa gerçek 'ürün yok' hatası verir", async () => {
+    vi.stubGlobal("fetch", async () => html(nextDataPage({ error: true, session: null })));
+    const client = new OzdisanClient(testConfig());
+    const err = await brokenError(client.getProductPage("368374"));
+    expect(err).toBeInstanceOf(UserInputError);
+    expect((err as Error).message).toMatch(/bulunamadı/);
+  });
+
+  it("kategori ağacı yanıtı beklenen yapıda değilse SiteContractError verir", async () => {
+    vi.stubGlobal("fetch", async () => json({ status: "ok", data: [] }));
+    const client = new OzdisanClient(testConfig());
+    expect(await brokenError(client.getCategoryIndex())).toBeInstanceOf(SiteContractError);
+  });
+
+  it("kategori araması bozuksa SiteContractError verir", async () => {
+    vi.stubGlobal("fetch", async () => json({ status: "ok" }));
+    const client = new OzdisanClient(testConfig());
+    expect(await brokenError(client.searchCategoryTree({ search: "ldo" }))).toBeInstanceOf(SiteContractError);
+  });
+
+  it("filtre yanıtı bozuksa SiteContractError verir", async () => {
+    vi.stubGlobal("fetch", async () => json({ total: 3 }));
+    const client = new OzdisanClient(testConfig());
+    expect(await brokenError(client.getAvailableFilters(279, {}, undefined))).toBeInstanceOf(SiteContractError);
+  });
+
+  it("hızlı arama yanıtı bozuksa SiteContractError verir", async () => {
+    vi.stubGlobal("fetch", async () => json(["beklenmeyen"]));
+    const client = new OzdisanClient(testConfig());
+    expect(await brokenError(client.quickSearch("LM317"))).toBeInstanceOf(SiteContractError);
+  });
+
+  it("boş hızlı arama yanıtı (isSingleMatch) hata sayılmaz", async () => {
+    vi.stubGlobal("fetch", async () => json({ isSingleMatch: false }));
+    const client = new OzdisanClient(testConfig());
+    await expect(client.quickSearch("zzzqqq")).resolves.toMatchObject({ isSingleMatch: false });
+  });
+
+  it("ürün listesi yanıtı bozuksa SiteContractError verir", async () => {
+    vi.stubGlobal("fetch", async () => json({ items: [] }));
+    const client = new OzdisanClient(testConfig());
+    expect(await brokenError(client.listProducts(279, {}))).toBeInstanceOf(SiteContractError);
+  });
+});

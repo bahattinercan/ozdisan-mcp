@@ -7,7 +7,7 @@ import { registerDatasheetTools } from "./tools/datasheet.js";
 import { registerProductTools } from "./tools/products.js";
 
 const INSTRUCTIONS = `Özdisan Elektronik (ozdisan.com) — Türkiye'nin en büyük elektronik komponent distribütörü — için salt-okunur katalog erişimi.
-~1 milyon ürün, binlerce kategori, kategoriye özel parametrik filtreler, stok, fiyat kırılımları (KDV hariç) ve datasheet'ler.
+~960 bin ürün, 955 kategori, kategoriye özel parametrik filtreler, stok, fiyat kırılımları (KDV hariç) ve datasheet'ler.
 
 Recommended workflows:
 - Known part number → get_product (or search_products for partial numbers).
